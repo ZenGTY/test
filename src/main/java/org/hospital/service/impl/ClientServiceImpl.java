@@ -1,7 +1,7 @@
 package org.hospital.service.impl;
 
 import org.hospital.dao.ClientDao;
-import org.hospital.entity.ClientEntity;
+import org.hospital.entity.Client;
 import org.hospital.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,7 @@ public class ClientServiceImpl implements ClientService {
      * @param id
      * @return
      */
-    public ClientEntity get(Integer id) {
+    public Client get(Long id) {
         return cdao.get(id);
     }
 
@@ -31,7 +31,7 @@ public class ClientServiceImpl implements ClientService {
      * @param client
      * @return client对象对应主键
      */
-    public Integer save(ClientEntity client) {
+    public Long save(Client client) {
         return cdao.save(client);
     }
 }

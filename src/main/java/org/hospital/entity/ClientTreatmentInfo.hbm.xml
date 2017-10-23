@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.hospital.entity.ClientTreatmentInfo" table="clienttreatmentinfo" schema=""
+           catalog="hospitalsystem">
+        <id name="clientTreatmentInfoId">
+            <column name="clientTreatmentInfoId" sql-type="bigint unsigned" not-null="true"/>
+        </id>
+        <property name="clientTreatmentProjectId">
+            <column name="clientTreatmentProjectId" sql-type="bigint unsigned" not-null="true"/>
+        </property>
+        <property name="clientId">
+            <column name="clientId" sql-type="bigint unsigned" not-null="true"/>
+        </property>
+        <property name="employeeId">
+            <column name="employeeId" sql-type="bigint unsigned" not-null="true"/>
+        </property>
+        <property name="departmentId">
+            <column name="departmentId" sql-type="int unsigned" not-null="true"/>
+        </property>
+        <property name="clinicId">
+            <column name="clinicId" sql-type="int unsigned" not-null="true"/>
+        </property>
+        <property name="treatTime">
+            <column name="treatTime" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

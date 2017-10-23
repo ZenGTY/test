@@ -1,7 +1,7 @@
 package org.hospital.service;
 
 
-import org.hospital.entity.ClientEntity;
+import org.hospital.entity.Client;
 
 /**
  * Created by Administrator on 2017/10/12.
@@ -12,12 +12,12 @@ public interface ClientService {
      * @param id
      * @return
      */
-    ClientEntity get(Integer id);
+    Client get(Long id);
 
     /**
      * 保存client对象至数据库并升级为持久态
      * @param client
      * @return client对象对应主键
      */
-    Integer save(ClientEntity client);
+    Long save(Client client);
 }

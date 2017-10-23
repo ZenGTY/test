@@ -1,7 +1,7 @@
 package org.hospital.dao.impl;
 
 import org.hospital.dao.ClientDao;
-import org.hospital.entity.ClientEntity;
+import org.hospital.entity.Client;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,7 +22,7 @@ public class ClientDaoImpl implements ClientDao {
      * @param entity
      * @return 保存对象表中对应的主键
      */
-    public Integer save(ClientEntity entity) {
+    public Long save(Client entity) {
         return null;
     }
 
@@ -31,11 +31,11 @@ public class ClientDaoImpl implements ClientDao {
      *
      * @param entity
      */
-    public void saveOrUpdate(ClientEntity entity) {
+    public void saveOrUpdate(Client entity) {
 
     }
 
-    public void delete(Integer id) {
+    public void delete(Long id) {
 
     }
 
@@ -45,25 +45,25 @@ public class ClientDaoImpl implements ClientDao {
      * @param id
      * @return
      */
-    public ClientEntity get(Integer id) {
+    public Client get(Long id) {
         return null;
     }
 
     /**
-     * 延迟获取持久化对象；为使用是知道id的代理对象
+     * 延迟获取持久化对象；
      *
      * @param id
      * @return
      */
-    public ClientEntity load(Integer id) {
+    public Client load(Long id) {
         return null;
     }
 
-    public ClientEntity merge(ClientEntity entity) {
+    public Client merge(Client entity) {
         return null;
     }
 
-    public List<ClientEntity> getAll() {
+    public List<Client> getAll() {
         return null;
     }
 }

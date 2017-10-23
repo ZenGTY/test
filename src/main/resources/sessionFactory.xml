@@ -6,5 +6,24 @@
   <session-factory>
     <property name="connection.url">jdbc:mysql://localhost:3306/hospitalSystem</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping resource="org/hospital/entity/Bill.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Billproject.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Client.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Clienttreatmentinfo.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Clienttreatmentproject.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Clinic.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Department.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Employee.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Hospitalization.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Log.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Permission.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Position.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Postionpermission.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Project.hbm.xml"/>
+      <mapping resource="org/hospital/entity/Record.hbm.xml"/>
+      <mapping resource="org/hospital/entity/BillProject.hbm.xml"/>
+      <mapping resource="org/hospital/entity/ClientTreatmentInfo.hbm.xml"/>
+      <mapping resource="org/hospital/entity/ClientTreatmentProject.hbm.xml"/>
+      <mapping resource="org/hospital/entity/PostionPermission.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
