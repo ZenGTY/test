@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - hospitalSystem@localhost" uuid="54c65e34-b820-4f5a-b34b-9ed3113d174c">
+    <database-info product="MySQL" version="5.7.19-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="hospitalsystem"/>
+    <table name="bill" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="billId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Y2V5o2u57yW5Y+3" autoIncrement="true"/>
+      <column name="clintId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5omA5bGe5a6i5oi357yW5Y+3"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5byA5Y2V5o2uZW1wbG95ZWXnvJblj7c="/>
+      <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe56eR5a6k57yW5Y+3"/>
+      <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6Zeo6K+K57yW5Y+3"/>
+      <column name="category" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5Yy755Sf5byA5Y2VKGRvY3RvckJpbGwpLOi0ueeUqOa4heWNlShmdW5kQmlsbCk="/>
+      <column name="totalCost" sqlType="DOUBLE UNSIGNED" precision="22" scale="0" nullable="false" jdbcType="8" remarks="5oC75pSv5Ye6"/>
+      <column name="totalPrice" sqlType="DOUBLE UNSIGNED" precision="22" scale="0" nullable="false" jdbcType="8" remarks="5oC75pS25YWl"/>
+      <column name="datetime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5byA5Y2V5omA5bGe5pe26Ze0"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5byA5Y2V55qE5pSv5LuY5oOF5Ya1KDA65bey5pSv5LuYOyAxOuacquaUr+S7mDsgLTE65bey5L2c5bqfKQ=="/>
+      <primary-key name="PRIMARY" columns="billId"/>
+    </table>
+    <table name="billproject" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="billId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Y2V5o2u57yW5Y+3"/>
+      <column name="projectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="6LS555So6aG555uu57yW5Y+3"/>
+      <column name="number" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5aaC5p6c5piv5rK755aX6aG555uu6K6w5b2V5qyh5pWwIOWQpuWImeS4ujAg"/>
+      <column name="price" sqlType="DOUBLE UNSIGNED" precision="22" scale="0" nullable="false" jdbcType="8" remarks="5oC75Lu35qC8"/>
+      <column name="deadline" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5rK755aX6aG555uu6K6w5b2V5oiq6Iez5pel5pyfICDlkKbliJnorr7kuLrnqbo="/>
+      <column name="extraInfo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6aKd5aSW5L+h5oGv"/>
+      <primary-key name="PRIMARY" columns="billId,projectId"/>
+    </table>
+    <table name="client" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi357yW5Y+3" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5ZCN56ew"/>
+      <column name="identity" sqlType="VARCHAR" precision="18" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Lqr5Lu96K+B"/>
+      <column name="age" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5bm06b6E"/>
+      <column name="sex" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="55S3KDApLOWlsygxKQ=="/>
+      <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5a6i5oi36IGU57O755S16K+d"/>
+      <column name="address" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5a6i5oi35L2P5Z2A"/>
+      <column name="birthdate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Ye66Lqr5pel5pyf"/>
+      <column name="birthplace" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Ye66Lqr5Zyw"/>
+      <column name="nation" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5ZCN5peP"/>
+      <column name="marriage" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5pyq5amaKDApO+W3suWpmigxKQ=="/>
+      <column name="occupation" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6IGM5Lia"/>
+      <column name="company" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5YWs5Y+45ZCN56ew"/>
+      <column name="registerTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5rOo5YaM5pe26Ze0"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5a6i5oi357G75Z6LKC0xOum7keWQjeWNleWuouaItzsgMDrmma7pgJrlrqLmiLcgOyAxOiDmma7pgJrkvJrlkZjlrqLmiLc7IDIgOui2hee6p+S8muWRmOWuouaItyA7KQ=="/>
+      <primary-key name="PRIMARY" columns="clientId"/>
+    </table>
+    <table name="clienttreatmentinfo" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="clientTreatmentInfoId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi35omn6KGM5rK755aX6K6w5b2V57yW5Y+3" autoIncrement="true"/>
+      <column name="clientTreatmentProjectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi35rK755aX6aG555uu57yW5Y+3"/>
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi357yW5Y+3"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5omn6KGM5rK755aX6aG555uuZW1wbG95ZWXnvJblj7c="/>
+      <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe56eR5a6k"/>
+      <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6Zeo6K+K"/>
+      <column name="treatTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5rK755aX5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="clientTreatmentInfoId"/>
+    </table>
+    <table name="clienttreatmentproject" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="clientTreatmentProjectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi35rK755aX6aG555uu6KGo57yW5Y+3" autoIncrement="true"/>
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi357yW5Y+3"/>
+      <column name="billId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Y2V5o2u57yW5Y+3"/>
+      <column name="projectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5rK755aX6aG555uu57yW5Y+3"/>
+      <column name="unitPrice" sqlType="DOUBLE UNSIGNED" precision="22" scale="0" nullable="false" jdbcType="8" remarks="5rK755aX5LiA5qyh55qE5Lu35qC8"/>
+      <column name="totalNumber" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5rK755aX6aG555uu6ZyA6KaB5omn6KGM55qE5oC75qyh5pWw"/>
+      <column name="restNumber" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5rK755aX6aG555uu5Ymp5LiL5rK755aX5qyh5pWw"/>
+      <column name="startTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5byA5aeL5pe26Ze0"/>
+      <column name="deadline" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91" remarks="5oiq6Iez5pe26Ze0"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="KDA65q2j5bi4OyAtMTrmrKHmlbDnlKjlrow7IC0yOui/h+acnzsp"/>
+      <primary-key name="PRIMARY" columns="clientTreatmentProjectId"/>
+    </table>
+    <table name="clinic" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="6Zeo6K+K6LSf6LSj5Lq657yW5Y+3"/>
+      <column name="creatorId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Yib5bu66Zeo6K+KZW1wbG95ZWXnmoTnvJblj7c="/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="6Zeo6K+K5ZCN56ew"/>
+      <column name="address" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Zeo6K+K5Zyw5Z2A"/>
+      <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Zeo6K+K55S16K+d"/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="clinicId"/>
+    </table>
+    <table name="department" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="56eR5a6k57yW5Y+3" autoIncrement="true"/>
+      <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6Zeo6K+K57yW5Y+3"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="56eR5a6k6LSf6LSj5Lq657yW5Y+3"/>
+      <column name="creatorId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Yib5bu656eR5a6kZW1vbG95ZWXnmoTnvJblj7c="/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="56eR5a6k5ZCN56ew"/>
+      <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="56eR5a6k55S16K+d"/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="56eR5a6k5Yib5bu65pel5pyf"/>
+      <primary-key name="PRIMARY" columns="departmentId"/>
+    </table>
+    <table name="employee" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5ZGY5bel57yW5Y+3" autoIncrement="true"/>
+      <column name="positionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6IGM5L2NSWQg"/>
+      <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5omA5bGe56eR5a6k57yW5Y+3"/>
+      <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5omA5bGe6Zeo6K+K57yW5Y+3"/>
+      <column name="account" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="55m75b2V6LSm5Y+3"/>
+      <column name="pwd" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="55m75b2V5a+G56CB"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5aeT5ZCN"/>
+      <column name="identity" sqlType="VARCHAR" precision="18" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Lqr5Lu96K+B"/>
+      <column name="age" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5ZGY5bel5bm06b6E"/>
+      <column name="sex" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="55S3KDApLOWlsygxKQ=="/>
+      <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="address" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5L2P5Z2A"/>
+      <column name="birthdate" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91" remarks="5Ye66Lqr5pel5pyf"/>
+      <column name="birthplace" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Ye66Lqr5Zyw"/>
+      <column name="nation" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5ZCN5peP"/>
+      <column name="marriage" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5pyq5amaKDApO+W3suWpmigxKQ=="/>
+      <column name="billCost" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" remarks="5byA5Y2V5oq95oiQ5omA5Y2g5oC75Lu35qC855m+5YiG5q+UKDEwLjIzOuihqOekuuWNoDEwLjIzJSk="/>
+      <column name="registerTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="loginTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5" remarks="6LSm5Y+354q25oCBOygwOuWcqOe6vzsgMTrkuI3lnKjnur87IC0xOuemgeatoueZu+mZhik="/>
+      <column name="isOnJob" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5Zyo6IGMKDApO+emu+iBjCgxKQ=="/>
+      <primary-key name="PRIMARY" columns="employeeId"/>
+    </table>
+    <table name="hospitalization" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="hospitalizationId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5L2P6Zmi5L+h5oGv57yW5Y+3" autoIncrement="true"/>
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5L2P6Zmi5a6i5oi357yW5Y+3"/>
+      <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe56eR5a6k57yW5Y+3"/>
+      <column name="codeICD" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Zu96ZmF55a+55eF5YiG57G757yW5Y+3"/>
+      <column name="enterDiagnosis" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5YWl6Zmi5pe26K+K5pat"/>
+      <column name="leaveDiagnosis" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Ye66Zmi5pe26K+K5pat"/>
+      <column name="enterSituation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5YWl6Zmi5pe25oKj6ICF5oOF5Ya1"/>
+      <column name="leaveSituation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Ye66Zmi5oKj6ICF5oOF5Ya1"/>
+      <column name="enterTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="leaveTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="hospitalizationId"/>
+    </table>
+    <table name="log" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="logId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5pON5L2c5Lq65ZGY57yW5Y+3"/>
+      <column name="content" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5pON5L2c5YW35L2T5YaF5a65"/>
+      <column name="operate" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5pON5L2c5pa55byP"/>
+      <column name="operateTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5pON5L2c5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="logId"/>
+    </table>
+    <table name="permission" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="permissionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5p2D6ZmQ57yW5Y+3" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5p2D6ZmQ5ZCN56ew"/>
+      <primary-key name="PRIMARY" columns="permissionId"/>
+    </table>
+    <table name="position" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="positionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6IGM5L2N57yW5Y+3" autoIncrement="true"/>
+      <column name="creatorId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Yib5bu66IGM5L2NZW1wbG95ZWXnmoTnvJblj7c="/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6IGM5L2N5o+P6L+w"/>
+      <column name="rank" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="6IGM5L2N562J57qnICgxOuWRmOW3pee6p++8mzLvvJrnp5HlrqTnuqfvvJszOumXqOiviue6p++8mzTvvJrkvIHkuJrnuqc7IDU66LaF57qn566h55CG5ZGY57qnOykg77yI5Yib5bu66IGM5L2N44CB6K6+572u5ZGY5bel6IGM5L2N6YO95Y+q6IO95piv6K6+572u5L2O5LqO5omA5bGe562J57qn55qE6IGM5L2N77yJ"/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="positionId"/>
+    </table>
+    <table name="postionpermission" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="positionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6IGM5L2N57yW5Y+3"/>
+      <column name="permissionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5p2D6ZmQ57yW5Y+3"/>
+      <primary-key name="PRIMARY" columns="positionId,permissionId"/>
+    </table>
+    <table name="project" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="projectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="6LS555So6aG555uu57yW5Y+3" autoIncrement="true"/>
+      <column name="creatorId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Yib5bu66aG555uu5ZGY5bel55qE5ZSv5LiA5qCH6K+G"/>
+      <column name="category" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5rK755aX6aG555uuKHRyZWF0bWVudFByb2plY3QpO+ihqOekuuWFtuS7lumhueebrihvdGhlclByb2plY3Qp"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="6aG555uu5ZCN56ew"/>
+      <column name="unitPrice" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5rK755aX6aG555uu5LiA5qyh5rK755aX5Lu35qC877yI6LS555So6aG555uu5aaC5p6c5piv5rK755aX6aG555uu77yJ5ZCm5YiZ5Li6MA=="/>
+      <column name="introduction" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6aG555uu5LuL57uN"/>
+      <column name="suggestNumber" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="OuW7uuiuruayu+eWl+asoeaVsCDvvIjotLnnlKjpobnnm67lpoLmnpzmmK/msrvnlpfpobnnm67vvInlkKbliJnkuLow"/>
+      <column name="type" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5pS25YWlKDApLOaUr+WHuigxKQ=="/>
+      <column name="status" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5bey5ZCv55SoKDApO+W3suemgeatoigxKQ=="/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="projectId"/>
+    </table>
+    <table name="record" schema="" catalog="hospitalsystem" type="TABLE">
+      <column name="recordId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="55eF5L6L6K6w5b2V57yW5Y+3" autoIncrement="true"/>
+      <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="6K+K5pat5Yy755Sf57yW5Y+3"/>
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="6KKr6K+K5pat5a6i5oi357yW5Y+3"/>
+      <column name="complain" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Li76K+J"/>
+      <column name="presentIllness" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="546w55eF5Y+y"/>
+      <column name="pastIllness" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5pei5b6A5Y+y"/>
+      <column name="physicalExamination" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5p+l5L2T"/>
+      <column name="basis" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6K+K5pat5L6d5o2u"/>
+      <column name="antidiastole" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Ym05Yir6K+K5pat"/>
+      <column name="preliminaryDiagnosis" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5Yid5q2l6K+K5pat"/>
+      <column name="diagnosisPlan" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6K+K5pat6K6h5YiS"/>
+      <column name="treatmentPlan" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5rK755aX6K6h5YiS"/>
+      <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="6Zeu6K+K5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="recordId"/>
+    </table>
+  </data-source>
+</component>
