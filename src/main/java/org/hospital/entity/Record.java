@@ -1,14 +1,18 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Record {
     private long recordId;
-    private long employeeId;
-    private long clientId;
+
+    private Employee employee;
+    private Client client;
+
     private String complain;
     private String presentIllness;
     private String pastIllness;
@@ -20,6 +24,8 @@ public class Record {
     private String treatmentPlan;
     private Timestamp createTime;
 
+    @Id
+    @Column(name = "recordId", nullable = false, insertable = true, updatable = true)
     public long getRecordId() {
         return recordId;
     }
@@ -28,22 +34,29 @@ public class Record {
         this.recordId = recordId;
     }
 
-    public long getEmployeeId() {
-        return employeeId;
+
+    @ManyToOne
+    @JoinColumn(name = "employeeId")
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployeeId(long employeeId) {
-        this.employeeId = employeeId;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
-    public long getClientId() {
-        return clientId;
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    public Client getClient() {
+        return client;
     }
 
-    public void setClientId(long clientId) {
-        this.clientId = clientId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
+    @Basic
+    @Column(name = "complain", nullable = true, insertable = true, updatable = true, length = 500)
     public String getComplain() {
         return complain;
     }
@@ -52,6 +65,8 @@ public class Record {
         this.complain = complain;
     }
 
+    @Basic
+    @Column(name = "presentIllness", nullable = true, insertable = true, updatable = true, length = 500)
     public String getPresentIllness() {
         return presentIllness;
     }
@@ -60,6 +75,8 @@ public class Record {
         this.presentIllness = presentIllness;
     }
 
+    @Basic
+    @Column(name = "pastIllness", nullable = true, insertable = true, updatable = true, length = 500)
     public String getPastIllness() {
         return pastIllness;
     }
@@ -68,6 +85,8 @@ public class Record {
         this.pastIllness = pastIllness;
     }
 
+    @Basic
+    @Column(name = "physicalExamination", nullable = true, insertable = true, updatable = true, length = 500)
     public String getPhysicalExamination() {
         return physicalExamination;
     }
@@ -76,6 +95,8 @@ public class Record {
         this.physicalExamination = physicalExamination;
     }
 
+    @Basic
+    @Column(name = "basis", nullable = true, insertable = true, updatable = true, length = 500)
     public String getBasis() {
         return basis;
     }
@@ -84,6 +105,8 @@ public class Record {
         this.basis = basis;
     }
 
+    @Basic
+    @Column(name = "antidiastole", nullable = true, insertable = true, updatable = true, length = 500)
     public String getAntidiastole() {
         return antidiastole;
     }
@@ -92,6 +115,8 @@ public class Record {
         this.antidiastole = antidiastole;
     }
 
+    @Basic
+    @Column(name = "preliminaryDiagnosis", nullable = true, insertable = true, updatable = true, length = 500)
     public String getPreliminaryDiagnosis() {
         return preliminaryDiagnosis;
     }
@@ -100,6 +125,8 @@ public class Record {
         this.preliminaryDiagnosis = preliminaryDiagnosis;
     }
 
+    @Basic
+    @Column(name = "diagnosisPlan", nullable = true, insertable = true, updatable = true, length = 500)
     public String getDiagnosisPlan() {
         return diagnosisPlan;
     }
@@ -108,6 +135,8 @@ public class Record {
         this.diagnosisPlan = diagnosisPlan;
     }
 
+    @Basic
+    @Column(name = "treatmentPlan", nullable = true, insertable = true, updatable = true, length = 500)
     public String getTreatmentPlan() {
         return treatmentPlan;
     }
@@ -116,6 +145,8 @@ public class Record {
         this.treatmentPlan = treatmentPlan;
     }
 
+    @Basic
+    @Column(name = "createTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getCreateTime() {
         return createTime;
     }
@@ -132,8 +163,8 @@ public class Record {
         Record record = (Record) o;
 
         if (recordId != record.recordId) return false;
-        if (employeeId != record.employeeId) return false;
-        if (clientId != record.clientId) return false;
+        if (employee.getEmployeeId() != record.employee.getEmployeeId()) return false;
+        if (client.getClientId() != record.client.getClientId()) return false;
         if (complain != null ? !complain.equals(record.complain) : record.complain != null) return false;
         if (presentIllness != null ? !presentIllness.equals(record.presentIllness) : record.presentIllness != null)
             return false;
@@ -157,8 +188,8 @@ public class Record {
     @Override
     public int hashCode() {
         int result = (int) (recordId ^ (recordId >>> 32));
-        result = 31 * result + (int) (employeeId ^ (employeeId >>> 32));
-        result = 31 * result + (int) (clientId ^ (clientId >>> 32));
+        result = 31 * result + (int) (employee.getEmployeeId() ^ (employee.getEmployeeId() >>> 32));
+        result = 31 * result + (int) (client.getClientId() ^ (client.getClientId() >>> 32));
         result = 31 * result + (complain != null ? complain.hashCode() : 0);
         result = 31 * result + (presentIllness != null ? presentIllness.hashCode() : 0);
         result = 31 * result + (pastIllness != null ? pastIllness.hashCode() : 0);

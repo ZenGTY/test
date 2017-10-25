@@ -1,12 +1,21 @@
 package org.hospital.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
+@IdClass(PostionPermissionPK.class)
 public class PostionPermission {
     private int positionId;
     private int permissionId;
 
+    @Id
+    @Column(name = "positionId", nullable = false, insertable = true, updatable = true)
     public int getPositionId() {
         return positionId;
     }
@@ -15,6 +24,8 @@ public class PostionPermission {
         this.positionId = positionId;
     }
 
+    @Id
+    @Column(name = "permissionId", nullable = false, insertable = true, updatable = true)
     public int getPermissionId() {
         return permissionId;
     }

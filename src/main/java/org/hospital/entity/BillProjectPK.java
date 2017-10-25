@@ -1,14 +1,18 @@
 package org.hospital.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
 public class BillProjectPK implements Serializable {
     private long billId;
     private long projectId;
 
+    @Column(name = "billId", nullable = false, insertable = true, updatable = true)
+    @Id
     public long getBillId() {
         return billId;
     }
@@ -17,6 +21,8 @@ public class BillProjectPK implements Serializable {
         this.billId = billId;
     }
 
+    @Column(name = "projectId", nullable = false, insertable = true, updatable = true)
+    @Id
     public long getProjectId() {
         return projectId;
     }

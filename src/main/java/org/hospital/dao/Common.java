@@ -21,7 +21,7 @@ public interface Common<T, PK extends Serializable> {
      * @param entity
      * @return 保存对象表中对应的主键
      */
-    PK save(T entity);
+    void save(T entity);
 
     /**
      * 保存或者更新对象至数据库
@@ -66,4 +66,11 @@ public interface Common<T, PK extends Serializable> {
      */
     List<T> getAll();
 
+    /**
+     * 获取通过单属性获取符合条件数据
+     * @param propertyName
+     * @param value
+     * @return
+     */
+    List<T> findByProperty(String propertyName,Object value);
 }

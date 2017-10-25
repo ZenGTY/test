@@ -1,10 +1,15 @@
 package org.hospital.entity;
 
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Client {
     private long clientId;
     private String name;
@@ -22,6 +27,8 @@ public class Client {
     private Timestamp registerTime;
     private short status;
 
+    @Id
+    @Column(name = "clientId", nullable = false, insertable = true, updatable = true)
     public long getClientId() {
         return clientId;
     }
@@ -30,6 +37,8 @@ public class Client {
         this.clientId = clientId;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }
@@ -38,6 +47,8 @@ public class Client {
         this.name = name;
     }
 
+    @Basic
+    @Column(name = "identity", nullable = true, insertable = true, updatable = true, length = 18)
     public String getIdentity() {
         return identity;
     }
@@ -46,6 +57,8 @@ public class Client {
         this.identity = identity;
     }
 
+    @Basic
+    @Column(name = "age", nullable = true, insertable = true, updatable = true)
     public Short getAge() {
         return age;
     }
@@ -54,6 +67,8 @@ public class Client {
         this.age = age;
     }
 
+    @Basic
+    @Column(name = "sex", nullable = true, insertable = true, updatable = true)
     public Short getSex() {
         return sex;
     }
@@ -62,6 +77,8 @@ public class Client {
         this.sex = sex;
     }
 
+    @Basic
+    @Column(name = "phone", nullable = true, insertable = true, updatable = true, length = 20)
     public String getPhone() {
         return phone;
     }
@@ -70,6 +87,8 @@ public class Client {
         this.phone = phone;
     }
 
+    @Basic
+    @Column(name = "address", nullable = true, insertable = true, updatable = true, length = 255)
     public String getAddress() {
         return address;
     }
@@ -78,6 +97,8 @@ public class Client {
         this.address = address;
     }
 
+    @Basic
+    @Column(name = "birthdate", nullable = true, insertable = true, updatable = true)
     public Timestamp getBirthdate() {
         return birthdate;
     }
@@ -86,6 +107,8 @@ public class Client {
         this.birthdate = birthdate;
     }
 
+    @Basic
+    @Column(name = "birthplace", nullable = true, insertable = true, updatable = true, length = 255)
     public String getBirthplace() {
         return birthplace;
     }
@@ -94,6 +117,8 @@ public class Client {
         this.birthplace = birthplace;
     }
 
+    @Basic
+    @Column(name = "nation", nullable = true, insertable = true, updatable = true, length = 50)
     public String getNation() {
         return nation;
     }
@@ -102,6 +127,8 @@ public class Client {
         this.nation = nation;
     }
 
+    @Basic
+    @Column(name = "marriage", nullable = true, insertable = true, updatable = true)
     public Short getMarriage() {
         return marriage;
     }
@@ -110,6 +137,8 @@ public class Client {
         this.marriage = marriage;
     }
 
+    @Basic
+    @Column(name = "occupation", nullable = true, insertable = true, updatable = true, length = 50)
     public String getOccupation() {
         return occupation;
     }
@@ -118,6 +147,8 @@ public class Client {
         this.occupation = occupation;
     }
 
+    @Basic
+    @Column(name = "company", nullable = true, insertable = true, updatable = true, length = 255)
     public String getCompany() {
         return company;
     }
@@ -126,6 +157,8 @@ public class Client {
         this.company = company;
     }
 
+    @Basic
+    @Column(name = "registerTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getRegisterTime() {
         return registerTime;
     }
@@ -134,6 +167,8 @@ public class Client {
         this.registerTime = registerTime;
     }
 
+    @Basic
+    @Column(name = "status", nullable = false, insertable = true, updatable = true)
     public short getStatus() {
         return status;
     }

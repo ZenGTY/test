@@ -1,12 +1,20 @@
 package org.hospital.entity;
 
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Permission {
     private int permissionId;
     private String name;
 
+    @Id
+    @Column(name = "permissionId", nullable = false, insertable = true, updatable = true)
     public int getPermissionId() {
         return permissionId;
     }
@@ -15,6 +23,8 @@ public class Permission {
         this.permissionId = permissionId;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }

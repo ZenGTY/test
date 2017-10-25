@@ -1,16 +1,20 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class ClientTreatmentProject {
     private long clientTreatmentProjectId;
-    private long clientId;
-    private long billId;
-    private long projectId;
+
+    private Client client;
+    private Bill bill;
+    private Project project;
+
     private double unitPrice;
     private short totalNumber;
     private short restNumber;
@@ -18,6 +22,8 @@ public class ClientTreatmentProject {
     private Date deadline;
     private short status;
 
+    @Id
+    @Column(name = "clientTreatmentProjectId", nullable = false, insertable = true, updatable = true)
     public long getClientTreatmentProjectId() {
         return clientTreatmentProjectId;
     }
@@ -26,30 +32,38 @@ public class ClientTreatmentProject {
         this.clientTreatmentProjectId = clientTreatmentProjectId;
     }
 
-    public long getClientId() {
-        return clientId;
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    public Client getClient() {
+        return client;
     }
 
-    public void setClientId(long clientId) {
-        this.clientId = clientId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public long getBillId() {
-        return billId;
+    @ManyToOne
+    @JoinColumn(name = "billId")
+    public Bill getBill() {
+        return bill;
     }
 
-    public void setBillId(long billId) {
-        this.billId = billId;
+    public void setBill(Bill bill) {
+        this.bill = bill;
     }
 
-    public long getProjectId() {
-        return projectId;
+    @ManyToOne
+    @JoinColumn(name = "projectId")
+    public Project getProject() {
+        return project;
     }
 
-    public void setProjectId(long projectId) {
-        this.projectId = projectId;
+    public void setProject(Project project) {
+        this.project = project;
     }
 
+    @Basic
+    @Column(name = "unitPrice", nullable = false, insertable = true, updatable = true, precision = 0)
     public double getUnitPrice() {
         return unitPrice;
     }
@@ -58,6 +72,8 @@ public class ClientTreatmentProject {
         this.unitPrice = unitPrice;
     }
 
+    @Basic
+    @Column(name = "totalNumber", nullable = false, insertable = true, updatable = true)
     public short getTotalNumber() {
         return totalNumber;
     }
@@ -66,6 +82,8 @@ public class ClientTreatmentProject {
         this.totalNumber = totalNumber;
     }
 
+    @Basic
+    @Column(name = "restNumber", nullable = false, insertable = true, updatable = true)
     public short getRestNumber() {
         return restNumber;
     }
@@ -74,6 +92,8 @@ public class ClientTreatmentProject {
         this.restNumber = restNumber;
     }
 
+    @Basic
+    @Column(name = "startTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getStartTime() {
         return startTime;
     }
@@ -82,6 +102,8 @@ public class ClientTreatmentProject {
         this.startTime = startTime;
     }
 
+    @Basic
+    @Column(name = "deadline", nullable = false, insertable = true, updatable = true)
     public Date getDeadline() {
         return deadline;
     }
@@ -90,6 +112,8 @@ public class ClientTreatmentProject {
         this.deadline = deadline;
     }
 
+    @Basic
+    @Column(name = "status", nullable = false, insertable = true, updatable = true)
     public short getStatus() {
         return status;
     }
@@ -106,9 +130,9 @@ public class ClientTreatmentProject {
         ClientTreatmentProject that = (ClientTreatmentProject) o;
 
         if (clientTreatmentProjectId != that.clientTreatmentProjectId) return false;
-        if (clientId != that.clientId) return false;
-        if (billId != that.billId) return false;
-        if (projectId != that.projectId) return false;
+        if (client.getClientId() != that.client.getClientId()) return false;
+        if (bill.getBillId() != that.bill.getBillId()) return false;
+        if (project.getProjectId() != that.project.getProjectId()) return false;
         if (Double.compare(that.unitPrice, unitPrice) != 0) return false;
         if (totalNumber != that.totalNumber) return false;
         if (restNumber != that.restNumber) return false;
@@ -124,9 +148,9 @@ public class ClientTreatmentProject {
         int result;
         long temp;
         result = (int) (clientTreatmentProjectId ^ (clientTreatmentProjectId >>> 32));
-        result = 31 * result + (int) (clientId ^ (clientId >>> 32));
-        result = 31 * result + (int) (billId ^ (billId >>> 32));
-        result = 31 * result + (int) (projectId ^ (projectId >>> 32));
+        result = 31 * result + (int) (client.getClientId() ^ (client.getClientId() >>> 32));
+        result = 31 * result + (int) (bill.getBillId() ^ (bill.getBillId() >>> 32));
+        result = 31 * result + (int) (project.getProjectId() ^ (project.getProjectId() >>> 32));
         temp = Double.doubleToLongBits(unitPrice);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (int) totalNumber;

@@ -1,18 +1,24 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Position {
     private int positionId;
-    private long creatorId;
+
+    private Employee creator;
+
     private String name;
     private String description;
     private short rank;
     private Timestamp createTime;
 
+    @Id
+    @Column(name = "positionId", nullable = false, insertable = true, updatable = true)
     public int getPositionId() {
         return positionId;
     }
@@ -21,14 +27,18 @@ public class Position {
         this.positionId = positionId;
     }
 
-    public long getCreatorId() {
-        return creatorId;
+    @ManyToOne
+    @JoinColumn(name = "creatorId")
+    public Employee getCreator() {
+        return creator;
     }
 
-    public void setCreatorId(long creatorId) {
-        this.creatorId = creatorId;
+    public void setCreator(Employee creator) {
+        this.creator = creator;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }
@@ -37,6 +47,8 @@ public class Position {
         this.name = name;
     }
 
+    @Basic
+    @Column(name = "description", nullable = true, insertable = true, updatable = true, length = 255)
     public String getDescription() {
         return description;
     }
@@ -45,6 +57,8 @@ public class Position {
         this.description = description;
     }
 
+    @Basic
+    @Column(name = "rank", nullable = false, insertable = true, updatable = true)
     public short getRank() {
         return rank;
     }
@@ -53,6 +67,8 @@ public class Position {
         this.rank = rank;
     }
 
+    @Basic
+    @Column(name = "createTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getCreateTime() {
         return createTime;
     }
@@ -69,7 +85,7 @@ public class Position {
         Position position = (Position) o;
 
         if (positionId != position.positionId) return false;
-        if (creatorId != position.creatorId) return false;
+        if (creator.getEmployeeId() != position.creator.getEmployeeId()) return false;
         if (rank != position.rank) return false;
         if (name != null ? !name.equals(position.name) : position.name != null) return false;
         if (description != null ? !description.equals(position.description) : position.description != null)
@@ -82,7 +98,7 @@ public class Position {
     @Override
     public int hashCode() {
         int result = positionId;
-        result = 31 * result + (int) (creatorId ^ (creatorId >>> 32));
+        result = 31 * result + (int) (creator.getEmployeeId() ^ (creator.getEmployeeId() >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (int) rank;

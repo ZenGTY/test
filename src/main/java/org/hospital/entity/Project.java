@@ -1,13 +1,18 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Project {
+
     private long projectId;
-    private long creatorId;
+
+    private Employee creator;
+
     private String category;
     private String name;
     private int unitPrice;
@@ -17,6 +22,8 @@ public class Project {
     private short status;
     private Timestamp createTime;
 
+    @Id
+    @Column(name = "projectId", nullable = false, insertable = true, updatable = true)
     public long getProjectId() {
         return projectId;
     }
@@ -25,14 +32,18 @@ public class Project {
         this.projectId = projectId;
     }
 
-    public long getCreatorId() {
-        return creatorId;
+    @ManyToOne
+    @JoinColumn(name = "creatorId")
+    public Employee getCreator() {
+        return creator;
     }
 
-    public void setCreatorId(long creatorId) {
-        this.creatorId = creatorId;
+    public void setCreator(Employee creator) {
+        this.creator = creator;
     }
 
+    @Basic
+    @Column(name = "category", nullable = false, insertable = true, updatable = true, length = 255)
     public String getCategory() {
         return category;
     }
@@ -41,6 +52,8 @@ public class Project {
         this.category = category;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }
@@ -49,6 +62,8 @@ public class Project {
         this.name = name;
     }
 
+    @Basic
+    @Column(name = "unitPrice", nullable = false, insertable = true, updatable = true)
     public int getUnitPrice() {
         return unitPrice;
     }
@@ -57,6 +72,8 @@ public class Project {
         this.unitPrice = unitPrice;
     }
 
+    @Basic
+    @Column(name = "introduction", nullable = true, insertable = true, updatable = true, length = 255)
     public String getIntroduction() {
         return introduction;
     }
@@ -65,6 +82,8 @@ public class Project {
         this.introduction = introduction;
     }
 
+    @Basic
+    @Column(name = "suggestNumber", nullable = false, insertable = true, updatable = true)
     public short getSuggestNumber() {
         return suggestNumber;
     }
@@ -73,6 +92,8 @@ public class Project {
         this.suggestNumber = suggestNumber;
     }
 
+    @Basic
+    @Column(name = "type", nullable = false, insertable = true, updatable = true)
     public short getType() {
         return type;
     }
@@ -81,6 +102,8 @@ public class Project {
         this.type = type;
     }
 
+    @Basic
+    @Column(name = "status", nullable = false, insertable = true, updatable = true)
     public short getStatus() {
         return status;
     }
@@ -89,6 +112,8 @@ public class Project {
         this.status = status;
     }
 
+    @Basic
+    @Column(name = "createTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getCreateTime() {
         return createTime;
     }
@@ -105,7 +130,7 @@ public class Project {
         Project project = (Project) o;
 
         if (projectId != project.projectId) return false;
-        if (creatorId != project.creatorId) return false;
+        if (creator.getEmployeeId() != project.creator.getEmployeeId()) return false;
         if (unitPrice != project.unitPrice) return false;
         if (suggestNumber != project.suggestNumber) return false;
         if (type != project.type) return false;
@@ -122,7 +147,7 @@ public class Project {
     @Override
     public int hashCode() {
         int result = (int) (projectId ^ (projectId >>> 32));
-        result = 31 * result + (int) (creatorId ^ (creatorId >>> 32));
+        result = 31 * result + (int) (creator.getEmployeeId() ^ (creator.getEmployeeId() >>> 32));
         result = 31 * result + (category != null ? category.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + unitPrice;

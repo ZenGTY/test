@@ -1,16 +1,21 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Employee {
+
     private long employeeId;
-    private int positionId;
-    private Integer departmentId;
-    private Integer clinicId;
+
+    private Position position;
+    private Department department;
+    private Clinic clinic;
+
     private String account;
     private String pwd;
     private String name;
@@ -24,11 +29,13 @@ public class Employee {
     private String nation;
     private Short marriage;
     private Double billCost;
-    private Timestamp registerTime;
+    private short isOnJob;
     private Timestamp loginTime;
-    private Short status;
-    private Short isOnJob;
+    private short status;
+    private Timestamp registerTime;
 
+    @Id
+    @javax.persistence.Column(name = "employeeId", nullable = false, insertable = true, updatable = true)
     public long getEmployeeId() {
         return employeeId;
     }
@@ -37,30 +44,38 @@ public class Employee {
         this.employeeId = employeeId;
     }
 
-    public int getPositionId() {
-        return positionId;
+    @ManyToOne
+    @JoinColumn(name = "positionId")
+    public Position getPosition() {
+        return position;
     }
 
-    public void setPositionId(int positionId) {
-        this.positionId = positionId;
+    public void setPosition(Position position) {
+        this.position = position;
     }
 
-    public Integer getDepartmentId() {
-        return departmentId;
+    @ManyToOne
+    @JoinColumn(name = "departmentId")
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(Integer departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
-    public Integer getClinicId() {
-        return clinicId;
+    @ManyToOne
+    @JoinColumn(name = "clinicId")
+    public Clinic getClinic() {
+        return clinic;
     }
 
-    public void setClinicId(Integer clinicId) {
-        this.clinicId = clinicId;
+    public void setClinic(Clinic clinic) {
+        this.clinic = clinic;
     }
 
+    @Basic
+    @javax.persistence.Column(name = "account", nullable = false, insertable = true, updatable = true, length = 50)
     public String getAccount() {
         return account;
     }
@@ -69,6 +84,9 @@ public class Employee {
         this.account = account;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "pwd", nullable = false, insertable = true, updatable = true, length = 50)
     public String getPwd() {
         return pwd;
     }
@@ -77,6 +95,9 @@ public class Employee {
         this.pwd = pwd;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "name", nullable = true, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }
@@ -85,6 +106,9 @@ public class Employee {
         this.name = name;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "identity", nullable = true, insertable = true, updatable = true, length = 18)
     public String getIdentity() {
         return identity;
     }
@@ -93,6 +117,9 @@ public class Employee {
         this.identity = identity;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "age", nullable = true, insertable = true, updatable = true)
     public Short getAge() {
         return age;
     }
@@ -101,6 +128,9 @@ public class Employee {
         this.age = age;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "sex", nullable = true, insertable = true, updatable = true)
     public Short getSex() {
         return sex;
     }
@@ -109,6 +139,9 @@ public class Employee {
         this.sex = sex;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "phone", nullable = true, insertable = true, updatable = true, length = 20)
     public String getPhone() {
         return phone;
     }
@@ -117,6 +150,9 @@ public class Employee {
         this.phone = phone;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "address", nullable = true, insertable = true, updatable = true, length = 255)
     public String getAddress() {
         return address;
     }
@@ -125,6 +161,9 @@ public class Employee {
         this.address = address;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "birthdate", nullable = true, insertable = true, updatable = true)
     public Date getBirthdate() {
         return birthdate;
     }
@@ -133,6 +172,9 @@ public class Employee {
         this.birthdate = birthdate;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "birthplace", nullable = true, insertable = true, updatable = true, length = 255)
     public String getBirthplace() {
         return birthplace;
     }
@@ -141,6 +183,9 @@ public class Employee {
         this.birthplace = birthplace;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "nation", nullable = true, insertable = true, updatable = true, length = 50)
     public String getNation() {
         return nation;
     }
@@ -149,6 +194,9 @@ public class Employee {
         this.nation = nation;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "marriage", nullable = true, insertable = true, updatable = true)
     public Short getMarriage() {
         return marriage;
     }
@@ -157,6 +205,9 @@ public class Employee {
         this.marriage = marriage;
     }
 
+
+    @Basic
+    @javax.persistence.Column(name = "billCost", nullable = true, insertable = true, updatable = true, precision = 0)
     public Double getBillCost() {
         return billCost;
     }
@@ -165,6 +216,8 @@ public class Employee {
         this.billCost = billCost;
     }
 
+    @Basic
+    @javax.persistence.Column(name = "registerTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getRegisterTime() {
         return registerTime;
     }
@@ -173,6 +226,8 @@ public class Employee {
         this.registerTime = registerTime;
     }
 
+    @Basic
+    @javax.persistence.Column(name = "loginTime", nullable = true, insertable = true, updatable = true)
     public Timestamp getLoginTime() {
         return loginTime;
     }
@@ -181,19 +236,24 @@ public class Employee {
         this.loginTime = loginTime;
     }
 
-    public Short getStatus() {
+    @Basic
+    @javax.persistence.Column(name = "status", nullable = false, insertable = true, updatable = true)
+    public short getStatus() {
         return status;
     }
 
-    public void setStatus(Short status) {
+    public void setStatus(short status) {
         this.status = status;
     }
 
-    public Short getIsOnJob() {
+
+    @Basic
+    @javax.persistence.Column(name = "isOnJob", nullable = false, insertable = true, updatable = true)
+    public short getIsOnJob() {
         return isOnJob;
     }
 
-    public void setIsOnJob(Short isOnJob) {
+    public void setIsOnJob(short isOnJob) {
         this.isOnJob = isOnJob;
     }
 
@@ -205,10 +265,10 @@ public class Employee {
         Employee employee = (Employee) o;
 
         if (employeeId != employee.employeeId) return false;
-        if (positionId != employee.positionId) return false;
-        if (departmentId != null ? !departmentId.equals(employee.departmentId) : employee.departmentId != null)
-            return false;
-        if (clinicId != null ? !clinicId.equals(employee.clinicId) : employee.clinicId != null) return false;
+        if (position.getPositionId() != employee.position.getPositionId()) return false;
+        if (status != employee.status) return false;
+        if (isOnJob != employee.isOnJob) return false;
+        if (clinic.getClinicId() != employee.clinic.getClinicId()) return false;
         if (account != null ? !account.equals(employee.account) : employee.account != null) return false;
         if (pwd != null ? !pwd.equals(employee.pwd) : employee.pwd != null) return false;
         if (name != null ? !name.equals(employee.name) : employee.name != null) return false;
@@ -225,8 +285,6 @@ public class Employee {
         if (registerTime != null ? !registerTime.equals(employee.registerTime) : employee.registerTime != null)
             return false;
         if (loginTime != null ? !loginTime.equals(employee.loginTime) : employee.loginTime != null) return false;
-        if (status != null ? !status.equals(employee.status) : employee.status != null) return false;
-        if (isOnJob != null ? !isOnJob.equals(employee.isOnJob) : employee.isOnJob != null) return false;
 
         return true;
     }
@@ -234,9 +292,9 @@ public class Employee {
     @Override
     public int hashCode() {
         int result = (int) (employeeId ^ (employeeId >>> 32));
-        result = 31 * result + positionId;
-        result = 31 * result + (departmentId != null ? departmentId.hashCode() : 0);
-        result = 31 * result + (clinicId != null ? clinicId.hashCode() : 0);
+        result = 31 * result + position.getPositionId();
+        result = 31 * result + (department != null ? department.hashCode() : 0);
+        result = 31 * result + (clinic != null ? clinic.hashCode() : 0);
         result = 31 * result + (account != null ? account.hashCode() : 0);
         result = 31 * result + (pwd != null ? pwd.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
@@ -252,8 +310,8 @@ public class Employee {
         result = 31 * result + (billCost != null ? billCost.hashCode() : 0);
         result = 31 * result + (registerTime != null ? registerTime.hashCode() : 0);
         result = 31 * result + (loginTime != null ? loginTime.hashCode() : 0);
-        result = 31 * result + (status != null ? status.hashCode() : 0);
-        result = 31 * result + (isOnJob != null ? isOnJob.hashCode() : 0);
+        result = 31 * result + (int) status;
+        result = 31 * result + (int) isOnJob;
         return result;
     }
 }

@@ -1,19 +1,25 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Department {
     private int departmentId;
-    private int clinicId;
-    private long employeeId;
-    private long creatorId;
+
+    private Clinic clinic;
+    private Employee employee;
+    private Employee creator;
+
     private String name;
     private String phone;
     private Timestamp createTime;
 
+    @Id
+    @Column(name = "departmentId", nullable = false, insertable = true, updatable = true)
     public int getDepartmentId() {
         return departmentId;
     }
@@ -22,30 +28,38 @@ public class Department {
         this.departmentId = departmentId;
     }
 
-    public int getClinicId() {
-        return clinicId;
+    @ManyToOne
+    @JoinColumn(name = "clinicId")
+    public Clinic getClinic() {
+        return clinic;
     }
 
-    public void setClinicId(int clinicId) {
-        this.clinicId = clinicId;
+    public void setClinic(Clinic clinic) {
+        this.clinic = clinic;
     }
 
-    public long getEmployeeId() {
-        return employeeId;
+    @ManyToOne
+    @JoinColumn(name = "employeeId")
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployeeId(long employeeId) {
-        this.employeeId = employeeId;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
-    public long getCreatorId() {
-        return creatorId;
+    @ManyToOne
+    @JoinColumn(name = "creatorId")
+    public Employee getCreator() {
+        return creator;
     }
 
-    public void setCreatorId(long creatorId) {
-        this.creatorId = creatorId;
+    public void setCreator(Employee creator) {
+        this.creator = creator;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, insertable = true, updatable = true, length = 50)
     public String getName() {
         return name;
     }
@@ -54,6 +68,8 @@ public class Department {
         this.name = name;
     }
 
+    @Basic
+    @Column(name = "phone", nullable = true, insertable = true, updatable = true, length = 20)
     public String getPhone() {
         return phone;
     }
@@ -62,6 +78,8 @@ public class Department {
         this.phone = phone;
     }
 
+    @Basic
+    @Column(name = "createTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getCreateTime() {
         return createTime;
     }
@@ -78,9 +96,9 @@ public class Department {
         Department that = (Department) o;
 
         if (departmentId != that.departmentId) return false;
-        if (clinicId != that.clinicId) return false;
-        if (employeeId != that.employeeId) return false;
-        if (creatorId != that.creatorId) return false;
+        if (clinic.getClinicId() != that.clinic.getClinicId()) return false;
+        if (employee.getEmployeeId() != that.employee.getEmployeeId()) return false;
+        if (creator.getEmployeeId() != that.creator.getEmployeeId()) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (phone != null ? !phone.equals(that.phone) : that.phone != null) return false;
         if (createTime != null ? !createTime.equals(that.createTime) : that.createTime != null) return false;
@@ -91,9 +109,9 @@ public class Department {
     @Override
     public int hashCode() {
         int result = departmentId;
-        result = 31 * result + clinicId;
-        result = 31 * result + (int) (employeeId ^ (employeeId >>> 32));
-        result = 31 * result + (int) (creatorId ^ (creatorId >>> 32));
+        result = 31 * result + clinic.getClinicId();
+        result = 31 * result + (int) (employee.getEmployeeId() ^ (employee.getEmployeeId() >>> 32));
+        result = 31 * result + (int) (creator.getEmployeeId() ^ (creator.getEmployeeId() >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         result = 31 * result + (createTime != null ? createTime.hashCode() : 0);

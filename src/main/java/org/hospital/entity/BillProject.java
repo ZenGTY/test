@@ -1,10 +1,13 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
+@IdClass(BillProjectPK.class)
 public class BillProject {
     private long billId;
     private long projectId;
@@ -13,6 +16,8 @@ public class BillProject {
     private Timestamp deadline;
     private String extraInfo;
 
+    @Id
+    @Column(name = "billId", nullable = false, insertable = true, updatable = true)
     public long getBillId() {
         return billId;
     }
@@ -21,6 +26,8 @@ public class BillProject {
         this.billId = billId;
     }
 
+    @Id
+    @Column(name = "projectId", nullable = false, insertable = true, updatable = true)
     public long getProjectId() {
         return projectId;
     }
@@ -29,6 +36,8 @@ public class BillProject {
         this.projectId = projectId;
     }
 
+    @Basic
+    @Column(name = "number", nullable = false, insertable = true, updatable = true)
     public short getNumber() {
         return number;
     }
@@ -37,6 +46,8 @@ public class BillProject {
         this.number = number;
     }
 
+    @Basic
+    @Column(name = "price", nullable = false, insertable = true, updatable = true, precision = 0)
     public double getPrice() {
         return price;
     }
@@ -45,6 +56,8 @@ public class BillProject {
         this.price = price;
     }
 
+    @Basic
+    @Column(name = "deadline", nullable = true, insertable = true, updatable = true)
     public Timestamp getDeadline() {
         return deadline;
     }
@@ -53,6 +66,8 @@ public class BillProject {
         this.deadline = deadline;
     }
 
+    @Basic
+    @Column(name = "extraInfo", nullable = true, insertable = true, updatable = true, length = 255)
     public String getExtraInfo() {
         return extraInfo;
     }

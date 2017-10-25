@@ -9,7 +9,7 @@
     <schema name="" catalog="hospitalsystem"/>
     <table name="bill" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="billId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Y2V5o2u57yW5Y+3" autoIncrement="true"/>
-      <column name="clintId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5omA5bGe5a6i5oi357yW5Y+3"/>
+      <column name="clientId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5omA5bGe5a6i5oi357yW5Y+3"/>
       <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5byA5Y2V5o2uZW1wbG95ZWXnvJblj7c="/>
       <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe56eR5a6k57yW5Y+3"/>
       <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6Zeo6K+K57yW5Y+3"/>
@@ -108,10 +108,10 @@
       <column name="nation" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5ZCN5peP"/>
       <column name="marriage" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5pyq5amaKDApO+W3suWpmigxKQ=="/>
       <column name="billCost" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" remarks="5byA5Y2V5oq95oiQ5omA5Y2g5oC75Lu35qC855m+5YiG5q+UKDEwLjIzOuihqOekuuWNoDEwLjIzJSk="/>
-      <column name="registerTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="registerTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <column name="loginTime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
-      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5" remarks="6LSm5Y+354q25oCBOygwOuWcqOe6vzsgMTrkuI3lnKjnur87IC0xOuemgeatoueZu+mZhik="/>
-      <column name="isOnJob" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="true" jdbcType="5" remarks="5Zyo6IGMKDApO+emu+iBjCgxKQ=="/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="6LSm5Y+354q25oCBOygwOuWcqOe6vzsgMTrkuI3lnKjnur87IC0xOuemgeatoueZu+mZhik="/>
+      <column name="isOnJob" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5Zyo6IGMKDApO+emu+iBjCgxKQ=="/>
       <primary-key name="PRIMARY" columns="employeeId"/>
     </table>
     <table name="hospitalization" schema="" catalog="hospitalsystem" type="TABLE">

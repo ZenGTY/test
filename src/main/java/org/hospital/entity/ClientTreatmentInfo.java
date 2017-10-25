@@ -1,19 +1,25 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class ClientTreatmentInfo {
     private long clientTreatmentInfoId;
-    private long clientTreatmentProjectId;
-    private long clientId;
-    private long employeeId;
-    private int departmentId;
-    private int clinicId;
+
+    private ClientTreatmentProject clientTreatmentProject;
+    private Client client;
+    private Employee employee;
+    private Department department;
+    private Clinic clinic;
+
     private Timestamp treatTime;
 
+    @Id
+    @Column(name = "clientTreatmentInfoId", nullable = false, insertable = true, updatable = true)
     public long getClientTreatmentInfoId() {
         return clientTreatmentInfoId;
     }
@@ -22,46 +28,58 @@ public class ClientTreatmentInfo {
         this.clientTreatmentInfoId = clientTreatmentInfoId;
     }
 
-    public long getClientTreatmentProjectId() {
-        return clientTreatmentProjectId;
+    @ManyToOne
+    @JoinColumn(name = "clientTreatmentProjectId")
+    public ClientTreatmentProject getClientTreatmentProject() {
+        return clientTreatmentProject;
     }
 
-    public void setClientTreatmentProjectId(long clientTreatmentProjectId) {
-        this.clientTreatmentProjectId = clientTreatmentProjectId;
+    public void setClientTreatmentProject(ClientTreatmentProject clientTreatmentProject) {
+        this.clientTreatmentProject = clientTreatmentProject;
     }
 
-    public long getClientId() {
-        return clientId;
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    public Client getClient() {
+        return client;
     }
 
-    public void setClientId(long clientId) {
-        this.clientId = clientId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public long getEmployeeId() {
-        return employeeId;
+    @ManyToOne
+    @JoinColumn(name = "employeeId")
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployeeId(long employeeId) {
-        this.employeeId = employeeId;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
+    @ManyToOne
+    @JoinColumn(name = "departmentId")
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
-    public int getClinicId() {
-        return clinicId;
+    @ManyToOne
+    @JoinColumn(name = "clinicId")
+    public Clinic getClinic() {
+        return clinic;
     }
 
-    public void setClinicId(int clinicId) {
-        this.clinicId = clinicId;
+    public void setClinic(Clinic clinic) {
+        this.clinic = clinic;
     }
 
+    @Basic
+    @Column(name = "treatTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getTreatTime() {
         return treatTime;
     }
@@ -78,11 +96,11 @@ public class ClientTreatmentInfo {
         ClientTreatmentInfo that = (ClientTreatmentInfo) o;
 
         if (clientTreatmentInfoId != that.clientTreatmentInfoId) return false;
-        if (clientTreatmentProjectId != that.clientTreatmentProjectId) return false;
-        if (clientId != that.clientId) return false;
-        if (employeeId != that.employeeId) return false;
-        if (departmentId != that.departmentId) return false;
-        if (clinicId != that.clinicId) return false;
+        if (clientTreatmentProject != that.clientTreatmentProject) return false;
+        if (client.getClientId() != that.client.getClientId()) return false;
+        if (employee.getEmployeeId() != that.employee.getEmployeeId()) return false;
+        if (department.getDepartmentId() != that.department.getDepartmentId()) return false;
+        if (clinic.getClinicId() != that.clinic.getClinicId()) return false;
         if (treatTime != null ? !treatTime.equals(that.treatTime) : that.treatTime != null) return false;
 
         return true;
@@ -91,11 +109,11 @@ public class ClientTreatmentInfo {
     @Override
     public int hashCode() {
         int result = (int) (clientTreatmentInfoId ^ (clientTreatmentInfoId >>> 32));
-        result = 31 * result + (int) (clientTreatmentProjectId ^ (clientTreatmentProjectId >>> 32));
-        result = 31 * result + (int) (clientId ^ (clientId >>> 32));
-        result = 31 * result + (int) (employeeId ^ (employeeId >>> 32));
-        result = 31 * result + departmentId;
-        result = 31 * result + clinicId;
+        result = 31 * result + (int) (clientTreatmentProject.getClientTreatmentProjectId() ^ (clientTreatmentProject.getClientTreatmentProjectId() >>> 32));
+        result = 31 * result + (int) (client.getClientId() ^ (client.getClientId() >>> 32));
+        result = 31 * result + (int) (employee.getEmployeeId() ^ (employee.getEmployeeId() >>> 32));
+        result = 31 * result + department.getDepartmentId();
+        result = 31 * result + clinic.getClinicId();
         result = 31 * result + (treatTime != null ? treatTime.hashCode() : 0);
         return result;
     }

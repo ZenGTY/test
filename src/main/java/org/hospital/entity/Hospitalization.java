@@ -1,14 +1,18 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Hospitalization {
     private long hospitalizationId;
-    private long clientId;
-    private int departmentId;
+
+    private Client client;
+    private Department department;
+
     private String codeIcd;
     private String enterDiagnosis;
     private String leaveDiagnosis;
@@ -17,6 +21,8 @@ public class Hospitalization {
     private Timestamp enterTime;
     private Timestamp leaveTime;
 
+    @Id
+    @Column(name = "hospitalizationId", nullable = false, insertable = true, updatable = true)
     public long getHospitalizationId() {
         return hospitalizationId;
     }
@@ -25,22 +31,28 @@ public class Hospitalization {
         this.hospitalizationId = hospitalizationId;
     }
 
-    public long getClientId() {
-        return clientId;
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    public Client getClient() {
+        return client;
     }
 
-    public void setClientId(long clientId) {
-        this.clientId = clientId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
+    @ManyToOne
+    @JoinColumn(name = "departmentId")
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
+    @Basic
+    @Column(name = "codeICD", nullable = true, insertable = true, updatable = true, length = 50)
     public String getCodeIcd() {
         return codeIcd;
     }
@@ -49,6 +61,8 @@ public class Hospitalization {
         this.codeIcd = codeIcd;
     }
 
+    @Basic
+    @Column(name = "enterDiagnosis", nullable = true, insertable = true, updatable = true, length = 255)
     public String getEnterDiagnosis() {
         return enterDiagnosis;
     }
@@ -57,6 +71,8 @@ public class Hospitalization {
         this.enterDiagnosis = enterDiagnosis;
     }
 
+    @Basic
+    @Column(name = "leaveDiagnosis", nullable = true, insertable = true, updatable = true, length = 255)
     public String getLeaveDiagnosis() {
         return leaveDiagnosis;
     }
@@ -65,6 +81,8 @@ public class Hospitalization {
         this.leaveDiagnosis = leaveDiagnosis;
     }
 
+    @Basic
+    @Column(name = "enterSituation", nullable = true, insertable = true, updatable = true, length = 255)
     public String getEnterSituation() {
         return enterSituation;
     }
@@ -73,6 +91,8 @@ public class Hospitalization {
         this.enterSituation = enterSituation;
     }
 
+    @Basic
+    @Column(name = "leaveSituation", nullable = true, insertable = true, updatable = true, length = 255)
     public String getLeaveSituation() {
         return leaveSituation;
     }
@@ -81,6 +101,8 @@ public class Hospitalization {
         this.leaveSituation = leaveSituation;
     }
 
+    @Basic
+    @Column(name = "enterTime", nullable = false, insertable = true, updatable = true)
     public Timestamp getEnterTime() {
         return enterTime;
     }
@@ -89,6 +111,8 @@ public class Hospitalization {
         this.enterTime = enterTime;
     }
 
+    @Basic
+    @Column(name = "leaveTime", nullable = true, insertable = true, updatable = true)
     public Timestamp getLeaveTime() {
         return leaveTime;
     }
@@ -105,8 +129,8 @@ public class Hospitalization {
         Hospitalization that = (Hospitalization) o;
 
         if (hospitalizationId != that.hospitalizationId) return false;
-        if (clientId != that.clientId) return false;
-        if (departmentId != that.departmentId) return false;
+        if (client.getClientId() != that.client.getClientId()) return false;
+        if (department.getDepartmentId() != that.department.getDepartmentId()) return false;
         if (codeIcd != null ? !codeIcd.equals(that.codeIcd) : that.codeIcd != null) return false;
         if (enterDiagnosis != null ? !enterDiagnosis.equals(that.enterDiagnosis) : that.enterDiagnosis != null)
             return false;
@@ -125,8 +149,8 @@ public class Hospitalization {
     @Override
     public int hashCode() {
         int result = (int) (hospitalizationId ^ (hospitalizationId >>> 32));
-        result = 31 * result + (int) (clientId ^ (clientId >>> 32));
-        result = 31 * result + departmentId;
+        result = 31 * result + (int) (client.getClientId() ^ (client.getClientId() >>> 32));
+        result = 31 * result + department.getDepartmentId();
         result = 31 * result + (codeIcd != null ? codeIcd.hashCode() : 0);
         result = 31 * result + (enterDiagnosis != null ? enterDiagnosis.hashCode() : 0);
         result = 31 * result + (leaveDiagnosis != null ? leaveDiagnosis.hashCode() : 0);

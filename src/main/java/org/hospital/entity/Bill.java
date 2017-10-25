@@ -1,22 +1,28 @@
 package org.hospital.entity;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by pismery on 2017-10-23.
+ * Created by pismery on 2017-10-24.
  */
+@Entity
 public class Bill {
     private long billId;
-    private long clintId;
-    private long employeeId;
-    private int departmentId;
-    private int clinicId;
+
+    private Client client;
+    private Employee employee;
+    private Department department;
+    private Clinic clinic;
+
     private String category;
     private double totalCost;
     private double totalPrice;
     private Timestamp datetime;
     private short status;
 
+    @Id
+    @Column(name = "billId", nullable = false, insertable = true, updatable = true)
     public long getBillId() {
         return billId;
     }
@@ -25,38 +31,48 @@ public class Bill {
         this.billId = billId;
     }
 
-    public long getClintId() {
-        return clintId;
+    @ManyToOne
+    @JoinColumn(name = "clientId")
+    public Client getClient() {
+        return client;
     }
 
-    public void setClintId(long clintId) {
-        this.clintId = clintId;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public long getEmployeeId() {
-        return employeeId;
+    @ManyToOne
+    @JoinColumn(name = "employeeId")
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployeeId(long employeeId) {
-        this.employeeId = employeeId;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
+    @ManyToOne
+    @JoinColumn(name = "departmentId")
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
-    public int getClinicId() {
-        return clinicId;
+    @ManyToOne
+    @JoinColumn(name = "clinicId")
+    public Clinic getClinic() {
+        return clinic;
     }
 
-    public void setClinicId(int clinicId) {
-        this.clinicId = clinicId;
+    public void setClinic(Clinic clinic) {
+        this.clinic = clinic;
     }
 
+    @Basic
+    @Column(name = "category", nullable = false, insertable = true, updatable = true, length = 50)
     public String getCategory() {
         return category;
     }
@@ -65,6 +81,8 @@ public class Bill {
         this.category = category;
     }
 
+    @Basic
+    @Column(name = "totalCost", nullable = false, insertable = true, updatable = true, precision = 0)
     public double getTotalCost() {
         return totalCost;
     }
@@ -73,6 +91,8 @@ public class Bill {
         this.totalCost = totalCost;
     }
 
+    @Basic
+    @Column(name = "totalPrice", nullable = false, insertable = true, updatable = true, precision = 0)
     public double getTotalPrice() {
         return totalPrice;
     }
@@ -81,6 +101,8 @@ public class Bill {
         this.totalPrice = totalPrice;
     }
 
+    @Basic
+    @Column(name = "datetime", nullable = false, insertable = true, updatable = true)
     public Timestamp getDatetime() {
         return datetime;
     }
@@ -89,6 +111,8 @@ public class Bill {
         this.datetime = datetime;
     }
 
+    @Basic
+    @Column(name = "status", nullable = false, insertable = true, updatable = true)
     public short getStatus() {
         return status;
     }
@@ -105,10 +129,10 @@ public class Bill {
         Bill bill = (Bill) o;
 
         if (billId != bill.billId) return false;
-        if (clintId != bill.clintId) return false;
-        if (employeeId != bill.employeeId) return false;
-        if (departmentId != bill.departmentId) return false;
-        if (clinicId != bill.clinicId) return false;
+        if (client.getClientId() != bill.client.getClientId()) return false;
+        if (employee.getEmployeeId() != bill.employee.getEmployeeId()) return false;
+        if (department.getDepartmentId() != bill.department.getDepartmentId()) return false;
+        if (clinic.getClinicId() != bill.clinic.getClinicId()) return false;
         if (Double.compare(bill.totalCost, totalCost) != 0) return false;
         if (Double.compare(bill.totalPrice, totalPrice) != 0) return false;
         if (status != bill.status) return false;
@@ -123,10 +147,10 @@ public class Bill {
         int result;
         long temp;
         result = (int) (billId ^ (billId >>> 32));
-        result = 31 * result + (int) (clintId ^ (clintId >>> 32));
-        result = 31 * result + (int) (employeeId ^ (employeeId >>> 32));
-        result = 31 * result + departmentId;
-        result = 31 * result + clinicId;
+        result = 31 * result + (int) (client.getClientId() ^ (client.getClientId() >>> 32));
+        result = 31 * result + (int) (employee.getEmployeeId() ^ (employee.getEmployeeId() >>> 32));
+        result = 31 * result + department.getDepartmentId();
+        result = 31 * result + clinic.getClinicId();
         result = 31 * result + (category != null ? category.hashCode() : 0);
         temp = Double.doubleToLongBits(totalCost);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
