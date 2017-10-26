@@ -19,6 +19,15 @@
       <column name="datetime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5byA5Y2V5omA5bGe5pe26Ze0"/>
       <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5byA5Y2V55qE5pSv5LuY5oOF5Ya1KDA65bey5pSv5LuYOyAxOuacquaUr+S7mDsgLTE65bey5L2c5bqfKQ=="/>
       <primary-key name="PRIMARY" columns="billId"/>
+      <foreign-key name="FKab8srry8g2qy281nan435u6di" columns="clientId" ref-table="client" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clientId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKdlhjt2o1w7g2mvh65mwn3pji3" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKheo3p6bf3q8u84puhnkdrlqtt" columns="departmentId" ref-table="department" ref-schema="" ref-catalog="hospitalsystem" ref-columns="departmentId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKn2y1kc4x9yhsy0pgj95lecidb" columns="clinicId" ref-table="clinic" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clinicId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKhqnnhxo32jafia50k6n4e3wnn" table="clienttreatmentproject" schema="" catalog="hospitalsystem" columns="billId"/>
+      <index name="FKab8srry8g2qy281nan435u6di" unique="false" columns="clientId"/>
+      <index name="FKdlhjt2o1w7g2mvh65mwn3pji3" unique="false" columns="employeeId"/>
+      <index name="FKheo3p6bf3q8u84puhnkdrlqtt" unique="false" columns="departmentId"/>
+      <index name="FKn2y1kc4x9yhsy0pgj95lecidb" unique="false" columns="clinicId"/>
     </table>
     <table name="billproject" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="billId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5Y2V5o2u57yW5Y+3"/>
@@ -46,6 +55,10 @@
       <column name="registerTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5rOo5YaM5pe26Ze0"/>
       <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5a6i5oi357G75Z6LKC0xOum7keWQjeWNleWuouaItzsgMDrmma7pgJrlrqLmiLcgOyAxOiDmma7pgJrkvJrlkZjlrqLmiLc7IDIgOui2hee6p+S8muWRmOWuouaItyA7KQ=="/>
       <primary-key name="PRIMARY" columns="clientId"/>
+      <exported-key name="FKab8srry8g2qy281nan435u6di" table="bill" schema="" catalog="hospitalsystem" columns="clientId"/>
+      <exported-key name="FKcf9qjg54h0sypaqvv6mwpkgb0" table="clienttreatmentinfo" schema="" catalog="hospitalsystem" columns="clientId"/>
+      <exported-key name="FKr3rj3ybcp0rn4vhcwvqy3ocd2" table="clienttreatmentproject" schema="" catalog="hospitalsystem" columns="clientId"/>
+      <exported-key name="FK8nves8xbjaq0uxthyo1hrpdrl" table="record" schema="" catalog="hospitalsystem" columns="clientId"/>
     </table>
     <table name="clienttreatmentinfo" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="clientTreatmentInfoId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi35omn6KGM5rK755aX6K6w5b2V57yW5Y+3" autoIncrement="true"/>
@@ -56,6 +69,16 @@
       <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5omA5bGe6Zeo6K+K"/>
       <column name="treatTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5rK755aX5pe26Ze0"/>
       <primary-key name="PRIMARY" columns="clientTreatmentInfoId"/>
+      <foreign-key name="FK6ycjp9lxs1r9m5ueiejxkvk2v" columns="clinicId" ref-table="clinic" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clinicId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKcf9qjg54h0sypaqvv6mwpkgb0" columns="clientId" ref-table="client" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clientId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKf46110xv21ufyjrhqdlmyylh9" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKnxkek4n2j074txpaak68pxbei" columns="departmentId" ref-table="department" ref-schema="" ref-catalog="hospitalsystem" ref-columns="departmentId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKp577lwwqqfd1s1484wi0wqv7i" columns="clientTreatmentProjectId" ref-table="clienttreatmentproject" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clientTreatmentProjectId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK6ycjp9lxs1r9m5ueiejxkvk2v" unique="false" columns="clinicId"/>
+      <index name="FKcf9qjg54h0sypaqvv6mwpkgb0" unique="false" columns="clientId"/>
+      <index name="FKf46110xv21ufyjrhqdlmyylh9" unique="false" columns="employeeId"/>
+      <index name="FKnxkek4n2j074txpaak68pxbei" unique="false" columns="departmentId"/>
+      <index name="FKp577lwwqqfd1s1484wi0wqv7i" unique="false" columns="clientTreatmentProjectId"/>
     </table>
     <table name="clienttreatmentproject" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="clientTreatmentProjectId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5a6i5oi35rK755aX6aG555uu6KGo57yW5Y+3" autoIncrement="true"/>
@@ -69,6 +92,13 @@
       <column name="deadline" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91" remarks="5oiq6Iez5pe26Ze0"/>
       <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="KDA65q2j5bi4OyAtMTrmrKHmlbDnlKjlrow7IC0yOui/h+acnzsp"/>
       <primary-key name="PRIMARY" columns="clientTreatmentProjectId"/>
+      <foreign-key name="FKfxfpvihkatxtv90pcj6l7flbp" columns="projectId" ref-table="project" ref-schema="" ref-catalog="hospitalsystem" ref-columns="projectId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKhqnnhxo32jafia50k6n4e3wnn" columns="billId" ref-table="bill" ref-schema="" ref-catalog="hospitalsystem" ref-columns="billId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKr3rj3ybcp0rn4vhcwvqy3ocd2" columns="clientId" ref-table="client" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clientId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKp577lwwqqfd1s1484wi0wqv7i" table="clienttreatmentinfo" schema="" catalog="hospitalsystem" columns="clientTreatmentProjectId"/>
+      <index name="FKfxfpvihkatxtv90pcj6l7flbp" unique="false" columns="projectId"/>
+      <index name="FKhqnnhxo32jafia50k6n4e3wnn" unique="false" columns="billId"/>
+      <index name="FKr3rj3ybcp0rn4vhcwvqy3ocd2" unique="false" columns="clientId"/>
     </table>
     <table name="clinic" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="clinicId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -79,6 +109,14 @@
       <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="6Zeo6K+K55S16K+d"/>
       <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
       <primary-key name="PRIMARY" columns="clinicId"/>
+      <foreign-key name="FKeyxre93si7s7spb31w16iagq0" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKhq87kared1ta89jshnh6o02j5" columns="creatorId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKn2y1kc4x9yhsy0pgj95lecidb" table="bill" schema="" catalog="hospitalsystem" columns="clinicId"/>
+      <exported-key name="FK6ycjp9lxs1r9m5ueiejxkvk2v" table="clienttreatmentinfo" schema="" catalog="hospitalsystem" columns="clinicId"/>
+      <exported-key name="FKgjfsn0tvmky29ytylxpeaihfv" table="department" schema="" catalog="hospitalsystem" columns="clinicId"/>
+      <exported-key name="FK59jkxrxslbghc9lkq9v6kbg8" table="employee" schema="" catalog="hospitalsystem" columns="clinicId"/>
+      <index name="FKeyxre93si7s7spb31w16iagq0" unique="false" columns="employeeId"/>
+      <index name="FKhq87kared1ta89jshnh6o02j5" unique="false" columns="creatorId"/>
     </table>
     <table name="department" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="departmentId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="56eR5a6k57yW5Y+3" autoIncrement="true"/>
@@ -89,6 +127,15 @@
       <column name="phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="56eR5a6k55S16K+d"/>
       <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="56eR5a6k5Yib5bu65pel5pyf"/>
       <primary-key name="PRIMARY" columns="departmentId"/>
+      <foreign-key name="FK86c29vj31mfeu5e1342i81yd1" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKgjfsn0tvmky29ytylxpeaihfv" columns="clinicId" ref-table="clinic" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clinicId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKsay4eh6fji9tgtmvonjj7m16i" columns="creatorId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKheo3p6bf3q8u84puhnkdrlqtt" table="bill" schema="" catalog="hospitalsystem" columns="departmentId"/>
+      <exported-key name="FKnxkek4n2j074txpaak68pxbei" table="clienttreatmentinfo" schema="" catalog="hospitalsystem" columns="departmentId"/>
+      <exported-key name="FKqrxujpcl9722pv7acfm7s8wyq" table="employee" schema="" catalog="hospitalsystem" columns="departmentId"/>
+      <index name="FK86c29vj31mfeu5e1342i81yd1" unique="false" columns="employeeId"/>
+      <index name="FKgjfsn0tvmky29ytylxpeaihfv" unique="false" columns="clinicId"/>
+      <index name="FKsay4eh6fji9tgtmvonjj7m16i" unique="false" columns="creatorId"/>
     </table>
     <table name="employee" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="employeeId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5ZGY5bel57yW5Y+3" autoIncrement="true"/>
@@ -113,6 +160,22 @@
       <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" remarks="6LSm5Y+354q25oCBOygwOuWcqOe6vzsgMTrkuI3lnKjnur87IC0xOuemgeatoueZu+mZhik="/>
       <column name="isOnJob" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5Zyo6IGMKDApO+emu+iBjCgxKQ=="/>
       <primary-key name="PRIMARY" columns="employeeId"/>
+      <foreign-key name="FK4kag5qxy2x0csnq71fy65brhk" columns="positionId" ref-table="position" ref-schema="" ref-catalog="hospitalsystem" ref-columns="positionId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK59jkxrxslbghc9lkq9v6kbg8" columns="clinicId" ref-table="clinic" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clinicId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKqrxujpcl9722pv7acfm7s8wyq" columns="departmentId" ref-table="department" ref-schema="" ref-catalog="hospitalsystem" ref-columns="departmentId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKdlhjt2o1w7g2mvh65mwn3pji3" table="bill" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <exported-key name="FKf46110xv21ufyjrhqdlmyylh9" table="clienttreatmentinfo" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <exported-key name="FKeyxre93si7s7spb31w16iagq0" table="clinic" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <exported-key name="FKhq87kared1ta89jshnh6o02j5" table="clinic" schema="" catalog="hospitalsystem" columns="creatorId"/>
+      <exported-key name="FK86c29vj31mfeu5e1342i81yd1" table="department" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <exported-key name="FKsay4eh6fji9tgtmvonjj7m16i" table="department" schema="" catalog="hospitalsystem" columns="creatorId"/>
+      <exported-key name="FKkmb2g1yp2vfvrmr5avarrxtxy" table="log" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <exported-key name="FK9uo46gc84wag8nnlrht761c78" table="position" schema="" catalog="hospitalsystem" columns="creatorId"/>
+      <exported-key name="FKa5sgkskkujuj4asnsmhxg44qd" table="project" schema="" catalog="hospitalsystem" columns="creatorId"/>
+      <exported-key name="FK1nd4ws8v53uajwpgi0ilktrni" table="record" schema="" catalog="hospitalsystem" columns="employeeId"/>
+      <index name="FK4kag5qxy2x0csnq71fy65brhk" unique="false" columns="positionId"/>
+      <index name="FK59jkxrxslbghc9lkq9v6kbg8" unique="false" columns="clinicId"/>
+      <index name="FKqrxujpcl9722pv7acfm7s8wyq" unique="false" columns="departmentId"/>
     </table>
     <table name="hospitalization" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="hospitalizationId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="5L2P6Zmi5L+h5oGv57yW5Y+3" autoIncrement="true"/>
@@ -134,6 +197,8 @@
       <column name="operate" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5pON5L2c5pa55byP"/>
       <column name="operateTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5pON5L2c5pe26Ze0"/>
       <primary-key name="PRIMARY" columns="logId"/>
+      <foreign-key name="FKkmb2g1yp2vfvrmr5avarrxtxy" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKkmb2g1yp2vfvrmr5avarrxtxy" unique="false" columns="employeeId"/>
     </table>
     <table name="permission" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="permissionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5p2D6ZmQ57yW5Y+3" autoIncrement="true"/>
@@ -148,8 +213,11 @@
       <column name="rank" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="6IGM5L2N562J57qnICgxOuWRmOW3pee6p++8mzLvvJrnp5HlrqTnuqfvvJszOumXqOiviue6p++8mzTvvJrkvIHkuJrnuqc7IDU66LaF57qn566h55CG5ZGY57qnOykg77yI5Yib5bu66IGM5L2N44CB6K6+572u5ZGY5bel6IGM5L2N6YO95Y+q6IO95piv6K6+572u5L2O5LqO5omA5bGe562J57qn55qE6IGM5L2N77yJ"/>
       <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
       <primary-key name="PRIMARY" columns="positionId"/>
+      <foreign-key name="FK9uo46gc84wag8nnlrht761c78" columns="creatorId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK4kag5qxy2x0csnq71fy65brhk" table="employee" schema="" catalog="hospitalsystem" columns="positionId"/>
+      <index name="FK9uo46gc84wag8nnlrht761c78" unique="false" columns="creatorId"/>
     </table>
-    <table name="postionpermission" schema="" catalog="hospitalsystem" type="TABLE">
+    <table name="positionpermission" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="positionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6IGM5L2N57yW5Y+3"/>
       <column name="permissionId" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5p2D6ZmQ57yW5Y+3"/>
       <primary-key name="PRIMARY" columns="positionId,permissionId"/>
@@ -166,6 +234,9 @@
       <column name="status" sqlType="SMALLINT UNSIGNED" precision="5" scale="0" nullable="false" jdbcType="5" remarks="5bey5ZCv55SoKDApO+W3suemgeatoigxKQ=="/>
       <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
       <primary-key name="PRIMARY" columns="projectId"/>
+      <foreign-key name="FKa5sgkskkujuj4asnsmhxg44qd" columns="creatorId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKfxfpvihkatxtv90pcj6l7flbp" table="clienttreatmentproject" schema="" catalog="hospitalsystem" columns="projectId"/>
+      <index name="FKa5sgkskkujuj4asnsmhxg44qd" unique="false" columns="creatorId"/>
     </table>
     <table name="record" schema="" catalog="hospitalsystem" type="TABLE">
       <column name="recordId" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" remarks="55eF5L6L6K6w5b2V57yW5Y+3" autoIncrement="true"/>
@@ -182,6 +253,10 @@
       <column name="treatmentPlan" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="5rK755aX6K6h5YiS"/>
       <column name="createTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="6Zeu6K+K5pe26Ze0"/>
       <primary-key name="PRIMARY" columns="recordId"/>
+      <foreign-key name="FK1nd4ws8v53uajwpgi0ilktrni" columns="employeeId" ref-table="employee" ref-schema="" ref-catalog="hospitalsystem" ref-columns="employeeId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK8nves8xbjaq0uxthyo1hrpdrl" columns="clientId" ref-table="client" ref-schema="" ref-catalog="hospitalsystem" ref-columns="clientId" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK1nd4ws8v53uajwpgi0ilktrni" unique="false" columns="employeeId"/>
+      <index name="FK8nves8xbjaq0uxthyo1hrpdrl" unique="false" columns="clientId"/>
     </table>
   </data-source>
 </component>

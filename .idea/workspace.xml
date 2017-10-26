@@ -2,77 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f956a4-24a0-4475-a63e-cd6e718df344" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\.idea\libraries\Maven__mysql_mysql_connector_java_6_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Bill.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Bill.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\BillProject.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\BillProject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\BillProjectPK.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Client.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Client.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\ClientTreatmentInfo.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\ClientTreatmentInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\ClientTreatmentProject.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\ClientTreatmentProject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Clinic.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Clinic.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Department.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Department.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Employee.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Employee.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Hospitalization.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Hospitalization.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Log.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Log.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Permission.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Permission.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Position.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Position.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\PostionPermission.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\PostionPermission.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\PostionPermissionPK.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Project.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Project.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Record.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\Record.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\resources\hostpitalsystem.sql" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\resources\sessionFactory.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\hostpitalsystem.sql" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\org\hospital\entity\ClientEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\sessionFactory.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\hostpitalsystem.sql" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\ClientEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\sessionFactory.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/dao/PositionPermissionDao.java" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\dao\PostionPermissionDao.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\service\TestService.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\service\impl\TestServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\org\hospital\entity\Postionpermission.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\org\hospital\entity\PostionpermissionPK.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\org\hospital\service\TestService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\HospitalSystem\WEB-INF\classes\org\hospital\service\impl\TestServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Postionpermission.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\PostionpermissionPK.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\TestService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\impl\TestServiceImpl.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Bill.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Bill.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Bill.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Bill.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/controller/BillController.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/controller/BillController.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\controller\BillController.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\controller\BillController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/BillDao.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/BillDao.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\BillDao.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\BillDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/impl/BillDaoImpl.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/impl/BillDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\impl\BillDaoImpl.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\impl\BillDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/BillProject.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/BillProject.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\BillProject.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\BillProject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/BillProjectPK.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/BillProjectPK.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\BillProjectPK.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\BillProjectPK.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/BillService.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/BillService.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\BillService.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\BillService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/impl/BillServiceImpl.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/impl/BillServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\impl\BillServiceImpl.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\impl\BillServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Client.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Client.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Client.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Client.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/ClientDao.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/ClientDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/hospital/dao/ClientDao.class" afterPath="$PROJECT_DIR$/target/classes/org/hospital/dao/ClientDao.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\ClientDao.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\ClientDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/impl/ClientDaoImpl.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/impl/ClientDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/hospital/dao/impl/ClientDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/hospital/dao/impl/ClientDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\impl\ClientDaoImpl.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\impl\ClientDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/ClientService.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/ClientService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/hospital/service/ClientService.class" afterPath="$PROJECT_DIR$/target/classes/org/hospital/service/ClientService.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\ClientService.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\ClientService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/impl/ClientServiceImpl.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/service/impl/ClientServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/hospital/service/impl/ClientServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/hospital/service/impl/ClientServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\impl\ClientServiceImpl.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\service\impl\ClientServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/ClientTreatmentInfo.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/ClientTreatmentInfo.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\ClientTreatmentInfo.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\ClientTreatmentInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/ClientTreatmentProject.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/ClientTreatmentProject.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\ClientTreatmentProject.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\ClientTreatmentProject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Clinic.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Clinic.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Clinic.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Clinic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/Common.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/dao/Common.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/hospital/dao/Common.class" afterPath="$PROJECT_DIR$/target/classes/org/hospital/dao/Common.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\Common.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\dao\Common.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Department.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Department.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Department.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Department.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Employee.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Employee.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Employee.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Employee.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/util/HibernateUtil.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/util/HibernateUtil.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\util\HibernateUtil.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\util\HibernateUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Hospitalization.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Hospitalization.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Hospitalization.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Hospitalization.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Log.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Log.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Log.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Log.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/controller/MainController.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/controller/MainController.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\controller\MainController.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\controller\MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Permission.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Permission.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Permission.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Permission.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Position.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Position.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Position.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Position.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Project.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Project.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Project.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Project.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Record.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/entity/Record.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Record.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\entity\Record.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/util/Test.class" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/org/hospital/util/Test.class" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\util\Test.class" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\org\hospital\util\Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/hospital/dao/Common.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/dao/Common.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/hospital/service/ClientService.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/service/ClientService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HospitalSystem.iml" afterPath="$PROJECT_DIR$/HospitalSystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/HospitalSystem_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/HospitalSystem_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dbConfig.properties" afterPath="$PROJECT_DIR$/src/main/resources/dbConfig.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/dbConfig.properties" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/dbConfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dbConfig.properties" afterPath="$PROJECT_DIR$/target/classes/dbConfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/index.jsp" afterPath="$PROJECT_DIR$/target/HospitalSystem/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\dbConfig.properties" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\dbConfig.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\log4j.properties" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="E:\Java\idea_workspace\HospitalSystem\target\classes\spring-mvc.xml" afterPath="E:\Java\idea_workspace\HospitalSystem\target\classes\spring-mvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\dao\impl\PostionpermissionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PositionpermissionDaoImpl.java" />
+      <change type="MOVED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\PostionPermission.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/entity/PositionPermission.java" />
+      <change type="MOVED" beforePath="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\entity\PostionPermissionPK.java" afterPath="$PROJECT_DIR$/src/main/java/org/hospital/entity/PositionPermissionPK.java" />
     </list>
     <ignored path="HospitalSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,114 +128,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="project" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="position" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="log" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="employee" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="department" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - hospitalSystem@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hospitalsystem" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="clinic" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -224,45 +135,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PositionDaoImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PositionDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41656804">
-              <caret line="119" column="47" selection-start-line="119" selection-start-column="47" selection-end-line="119" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecordDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/RecordDaoImpl.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="133" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Position.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Position.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PositionDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/PositionDao.java">
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="28" />
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6441718">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -275,6 +244,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Html5" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -287,53 +258,18 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentProjectDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentInfoDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillProjectDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/EmployeeDaoImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/DepartmentDaoImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClinicDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/DepartmentDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentInfoDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentProjectDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillProjectDaoImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/EmployeeDaoImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/ClientTreatmentInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/ClientTreatmentProject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Bill.java" />
-        <option value="$PROJECT_DIR$/target/classes/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/Common.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/54c65e34-b820-4f5a-b34b-9ed3113d174c/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/BillDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/BillService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/BillProject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/BillProjectDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillProjectImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/ClientTreatmentInfoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillProjectDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/ClientTreatmentProjectDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentInfoDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentProjectDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/ClinicDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Clinic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClinicDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/DepartmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/DepartmentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/EmployeeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/HospitalizationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/EmployeeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Hospitalization.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/HospitalizationDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/LogDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/LogDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/PermissionDao.java" />
@@ -350,6 +286,41 @@
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/PositionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/entity/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PositionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/ClientService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClinicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillProjectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/RecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientTreatmentInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientTreatmentProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClinicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/DepartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/HospitalizationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/LogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PositionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PostionPermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/RecordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/util/Md5Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/util/ExcelUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/service/BillProjectService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dbConfig.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/views/test2.jsp" />
+        <option value="$PROJECT_DIR$/target/HospitalSystem/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/web/views/login.html" />
+        <option value="$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java" />
       </list>
     </option>
   </component>
@@ -445,6 +416,52 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.hospital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HospitalSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.hospital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao.impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -529,10 +546,6 @@
               <option name="myItemId" value="HospitalSystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -575,30 +588,8 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,150 +617,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="hospital" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hospital" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.hospital" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.hospital" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao.impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -777,7 +624,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -785,21 +632,22 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27248678" />
     <property name="FullScreen" value="false" />
     <property name="JPA.DatabaseSchemaImportDialog" value="54c65e34-b820-4f5a-b34b-9ed3113d174c" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\idea_workspace\HospitalSystem\web" />
+      <recent name="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\service\impl" />
       <recent name="E:\Java\idea_workspace\HospitalSystem\web\WEB-INF\lib" />
       <recent name="E:\Java\idea_workspace\HospitalSystem\src\main\resources" />
       <recent name="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital\dao\impl" />
-      <recent name="E:\Java\idea_workspace\HospitalSystem\src\main\java\org\hospital" />
-      <recent name="E:\Java\idea_workspace\HospitalSystem\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.hospital.dao.impl" />
@@ -1184,8 +1032,6 @@
     <configuration default="false" name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M21" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="HospitalSystem:war exploded">
           <settings>
@@ -1250,9 +1096,7 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 9" />
@@ -1265,8 +1109,8 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration useDefault="false">C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1281,12 +1125,14 @@
       <workItem from="1508824710143" duration="4213000" />
       <workItem from="1508829361400" duration="897000" />
       <workItem from="1508830284431" duration="9032000" />
-      <workItem from="1508896018841" duration="10991000" />
+      <workItem from="1508896018841" duration="18690000" />
+      <workItem from="1508916342506" duration="7393000" />
+      <workItem from="1508980113596" duration="346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50455000" />
+    <option name="totallyTimeSpent" value="65893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1303,33 +1149,33 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24459614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.50398177" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.4960182" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3977516" sideWeight="0.48691696" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4050057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22644539" sideWeight="0.3572241" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22644539" sideWeight="0.6427759" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24464668" sideWeight="0.5506257" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26605996" sideWeight="0.5085324" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22162741" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3083512" sideWeight="0.4960182" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22644539" sideWeight="0.51308304" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24464668" sideWeight="0.4493743" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1385,10 +1231,356 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/LogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/PermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/PositionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/PositionPermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/RecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientTreatmentInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClientTreatmentProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ClinicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/EmployeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/HospitalizationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/LogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PositionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ec00e025/54c65e34-b820-4f5a-b34b-9ed3113d174c/hospitalsystem..positionpermission">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/PositionPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/PositionPermissionPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/PositionPermissionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/PostionPermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PositionpermissionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/ProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/RecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/util/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/util/Md5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/util/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/BillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/ClientTreatmentInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/BillProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/HospitalSystem/views/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3421054">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/test2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.157895">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/HospitalSystem/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.105263">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/HospitalSystem/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/HospitalSystem/WEB-INF/classes/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1396,451 +1588,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/controller/BillController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Bill.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <element signature="method#equals#0;class#Bill#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Bill#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/BillService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/service/impl/BillServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/BillProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.6441718">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/BillProjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24023668">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/BillDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27455622">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/BillProjectPK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/ClientTreatmentInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillProjectDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/ClientTreatmentProjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/ClientTreatmentProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="25" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/ClinicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/BillDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Clinic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/DepartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClinicDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="129" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentInfoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="124" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ClientTreatmentProjectDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17159763">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/ClientTreatmentInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/EmployeeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/DepartmentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="127" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/HospitalizationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Hospitalization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/EmployeeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27928993">
-          <caret line="131" column="77" selection-start-line="131" selection-start-column="77" selection-end-line="143" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/LogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/HospitalizationDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/PermissionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/LogDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="128" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/PostionPermissionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/PostionPermission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/PostionPermissionPK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PermissionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="125" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/ProjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PostionpermissionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="7" selection-start-line="113" selection-start-column="7" selection-end-line="124" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/RecordDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/ProjectDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="134" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/PositionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/entity/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/RecordDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="133" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/hospital/dao/impl/PositionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41656804">
-          <caret line="119" column="47" selection-start-line="119" selection-start-column="47" selection-end-line="119" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1863,7 +1630,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate (HospitalSystem)|Hibernate</last-edited>
+          <last-edited>Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1898,7 +1665,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|HospitalSystem</last-edited>
+          <last-edited>HospitalSystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

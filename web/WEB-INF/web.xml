@@ -7,7 +7,7 @@
 
     <display-name>hospital</display-name>
     <welcome-file-list>
-        <welcome-file>/index.jsp</welcome-file>
+        <welcome-file>/login.html</welcome-file>
     </welcome-file-list>
 
     <!--加载Spring的配置文件到上下文中去-->
@@ -29,6 +29,10 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
     <!-- spring MVC config end-->
 
     <!-- Spring监听器 -->
@@ -63,9 +67,4 @@
         <filter-name>SpringOpenSessionInViewFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
-    <servlet-mapping>
-        <servlet-name>spring</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
 </web-app>
