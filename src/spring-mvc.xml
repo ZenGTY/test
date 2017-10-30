@@ -16,8 +16,17 @@
 	<mvc:resources mapping="/img/**" location="/resources/img/" />
 	<mvc:resources mapping="/lib/**" location="/lib/" />
 	<mvc:resources mapping="/views/**" location="/views/" />
-	<mvc:resources mapping="/error404.html" location="/error404.html" />
-
+	<mvc:resources mapping="/*.html" location="/" />
+	
+	<mvc:interceptors>
+        <mvc:interceptor>
+            <!-- 拦截所有URL中包含/user/的请求 -->
+            <mvc:mapping path="/billController/**"/>
+            <mvc:mapping path="/reportController/**"/>
+            <bean class="org.hospital.interceptor.loginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:suffix=".jsp"></bean>

@@ -38,7 +38,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${requestScope.incomeRowsInfo}" var="incomeRowsInfo">
+				<c:forEach items="${requestScope.incomeRowInfos}" var="incomeRowsInfo">
 					<tr>
 						<td><c:out value="${incomeRowsInfo.projectId}"></c:out></td>
 						<td><c:out value="${incomeRowsInfo.projectName}"></c:out></td>
@@ -48,7 +48,7 @@
 						</td>
 					</tr>
 				</c:forEach>
-				<c:forEach items="${requestScope.costRowsInfo}" var="costRowsInfo">
+				<c:forEach items="${requestScope.costRowInfos}" var="costRowsInfo">
 					<tr>
 						<td><c:out value="${costRowsInfo.projectId}"></c:out></td>
 						<td><c:out value="${costRowsInfo.projectName}"></c:out></td>

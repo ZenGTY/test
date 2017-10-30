@@ -83,10 +83,34 @@
 	<button class="btn" onclick="getClinicReport()">getClinicReport</button>
 	<br />
 	<br />
+	
+	<label>get： </label>
+	<button class="btn" onclick="get()">getClinicReport</button>
+	<br />
+	<br />
 
 </body>
 <script type="text/javascript" src="./lib/jquery-1.10.2/jquery.min.js"></script>
 <script>
+	function get() {
+		var paramInfo = {
+				
+			};
+		$.ajax({
+			data : paramInfo,
+			url : "./billController/get",
+			type : "GET",
+			success : function(response) {
+				console.log(response);
+				$("#div_1").html(response);
+			},
+			statusCode:{
+				405 : function(){
+					window.location.href = "/Hospital/login.html";
+				}
+			}
+		});
+	}
 	function getClinicReport() {
 		var paramInfo = {
 				clinicId : 1,
@@ -202,7 +226,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	};
@@ -223,7 +247,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	};
@@ -244,7 +268,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	};
@@ -252,8 +276,8 @@
 	function getWorkerReportRank3() {
 		var paramInfo = {
 			rank : 3,
-			departmentId : 3,
-			clinicId : 3,
+			departmentId : 1,
+			clinicId : 1,
 			startTime : "2000-01-01",
 			endTime : "2017-11-25",
 		};
@@ -265,7 +289,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	}
@@ -273,8 +297,8 @@
 	function getWorkerReportRank2() {
 		var paramInfo = {
 			rank : 2,
-			departmentId : 3,
-			clinicId : 3,
+			departmentId : 1,
+			clinicId : 1,
 			startTime : "2000-01-01",
 			endTime : "2017-11-25",
 		};
@@ -286,7 +310,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	}
@@ -294,8 +318,8 @@
 	function getWorkerReportRank1() {
 		var paramInfo = {
 			rank : 1,
-			departmentId : 2,
-			clinicId : 2,
+			departmentId : 1,
+			clinicId : 1,
 			startTime : "2000-01-01",
 			endTime : "2017-11-25",
 		};
@@ -307,7 +331,7 @@
 			type : "POST",
 			success : function(response) {
 				console.log(response);
-				console.log(JSON.parse(response.result));
+				$("#div_1").html(response);
 			}
 		});
 	}

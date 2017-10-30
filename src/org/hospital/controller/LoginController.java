@@ -35,4 +35,5 @@ public class LoginController {
         session.setAttribute("employee",e);
         return StringUtil.setResult(200,"登录成功", JSONObject.toJSONString(e));
     }
+    
 }

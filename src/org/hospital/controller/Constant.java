@@ -35,15 +35,21 @@ public enum Constant {
     GET_REPORT("查看报表"),
 
     /**
-     * bill表 category字段 医生开单(doctorBill),费用清单(fundBill)
+     * bill表 category字段 医生开单(doctorBill)
      */
     DOCTOR_BILL("doctorBill"),
+    /**
+     * bill表 category字段 费用清单(fundBill)
+     */
     FUND_BILL("fundBill"),
     
     /**
-     * project表category字段 治疗项目(treatmentProject),费用项目(fundProject)
+     * project表category字段 治疗项目(treatmentProject)
      */
     TREATMENT_PROJECT("treatmentProject"),
+    /**
+     * project表category字段 费用项目(fundProject)
+     */
     FUND_PROJECT("fundProject");
 
 

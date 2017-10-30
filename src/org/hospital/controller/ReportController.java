@@ -61,9 +61,8 @@ public class ReportController {
 	 * @param session
 	 * @return
 	 */
-	@ResponseBody
 	@RequestMapping(value = "/getDoctorReport", produces = "text/json;charset=utf-8")
-	public String getDoctorReport(WebRequest req, HttpSession session) {
+	public String getDoctorReport(WebRequest req, HttpSession session,ModelMap model) {
 		// 参数
 		// {
 		// rank : xxx, (1:科室级报表;2:门诊级报表;3:企业级报表)
@@ -129,25 +128,12 @@ public class ReportController {
 			JSONObject resultJO = bService.getDepartmentSumPrice(department, startTimeLong,
 					endTimeLong);
 
-			resultJO.put("rowInfos", rowInfosJA);
-			System.out.println("ReportController.getDoctorReport.resultJO : "
-					+ resultJO.toJSONString());
-
-			return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-
-			// 结果显示
-			// result : {
-			// "departmentId":1,
-			// "departmentName":"科室一",
-			// "sumNumber":15,
-			// "sumPrice":6750
-			// "rowInfos":[{
-			// "employeeId":1,
-			// "employeeName":"pismery",
-			// "sumNumber":15,
-			// "sumPrice":6750}]
-			// }
-
+			//[{ "employeeId":1,"employeeName":"pismery","sumNumber":15,"sumPrice":6750}]
+			model.addAttribute("rowInfos", rowInfosJA);
+			//result : {"departmentId":1,"departmentName":"科室一","sumNumber":15,"sumPrice":6750"}
+			model.addAttribute("sumInfo", resultJO);
+			
+			return "forward:/getDoctorReport.jsp";
 		}
 
 		// 门诊级别
@@ -177,25 +163,12 @@ public class ReportController {
 			// {"clinicId":1,"clinicName":"门诊一","sumNumber":15,"sumPrice":6750}
 			JSONObject resultJO = bService.getClinicSumPrice(clinic, startTimeLong, endTimeLong);
 
-			resultJO.put("rowInfos", rowInfosJA);
-			System.out.println("ReportController.getDoctorReport.resultJO2 : "
-					+ resultJO.toJSONString());
-
-			return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-			// 返回参数例子：
-			// {
-			// "code":200,
-			// "msg":"获取成功",
-			// "result":{}
-			// }
-			// result:
-			// {
-			// "clinicId:1,
-			// "clinicName:门诊一,
-			// "sumNumber":3,
-			// "sumPrice":60,
-			// rowInfosos":[{"departmentId":1,"departmentName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
-			// }
+			//[{ "departmentId":1,"departmentName":"pismery","sumNumber":15,"sumPrice":6750}]
+			model.addAttribute("rowInfos", rowInfosJA);
+			//{"clinicId":1,"clinicName":"门诊一","sumNumber":15,"sumPrice":6750}
+			model.addAttribute("sumInfo", resultJO);
+			
+			return "forward:/getDoctorReport2.jsp";
 		}
 
 		// 企业级报表
@@ -207,23 +180,13 @@ public class ReportController {
 			rowInfosJA.add(rowInfosJO);
 		}
 		JSONObject resultJO = bService.getSumPrice(startTimeLong, endTimeLong);
-		resultJO.put("rowInfos", rowInfosJA);
-		System.out.println("ReportController.getDoctorReport.resultJO3 : "
-				+ resultJO.toJSONString());
-
-		return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-		// 返回参数例子：
-		// {
-		// "code":200,
-		// "msg":"获取成功",
-		// "result":{}
-		// }
-		// result:
-		// {
-		// "sumNumber":3,
-		// "sumPrice":60,
-		// "rowInfos":[{"clinicId":1,"clinicName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
-		// }
+		
+		//[{ "clinicId":1,"clinicName":"pismery","sumNumber":15,"sumPrice":6750}]
+		model.addAttribute("rowInfos", rowInfosJA);
+		//{"sumNumber":15,"sumPrice":6750}
+		model.addAttribute("sumInfo", resultJO);
+		
+		return "forward:/getDoctorReport3.jsp";
 	}
 
 	/**
@@ -427,23 +390,23 @@ public class ReportController {
 		List<Project> treatmentPjList = bService.getDepartmentTreatmentProject(department,
 				startTimeLong, endTimeLong);
 
-		JSONArray incomeRowsInfo = bService.getDepartmentProjectReportMsg(incomePjList,
+		JSONArray incomeRowInfos = bService.getDepartmentProjectReportMsg(incomePjList,
 				startTimeLong, endTimeLong, Constant.FUND_BILL.getName(),
 				department.getDepartmentId());
 
-		JSONArray costRowsInfo = bService.getDepartmentProjectReportMsg(costPjList, startTimeLong,
+		JSONArray costRowInfos = bService.getDepartmentProjectReportMsg(costPjList, startTimeLong,
 				endTimeLong, Constant.FUND_BILL.getName(), department.getDepartmentId());
 
 		JSONArray treatmentRowsInfo = bService.getDepartmentProjectReportMsg(treatmentPjList,
 				startTimeLong, endTimeLong, Constant.DOCTOR_BILL.getName(),
 				department.getDepartmentId());
 
-		JSONObject sumJO = bService.getSumPrice(incomeRowsInfo, costRowsInfo, treatmentRowsInfo);
+		JSONObject sumJO = bService.getSumPrice(incomeRowInfos, costRowInfos, treatmentRowsInfo);
 
-		incomeRowsInfo.add(getTreatmentSumJO(treatmentRowsInfo));
+		incomeRowInfos.add(getTreatmentSumJO(treatmentRowsInfo));
 
-		model.addAttribute("incomeRowsInfo", incomeRowsInfo);
-		model.addAttribute("costRowsInfo", costRowsInfo);
+		model.addAttribute("incomeRowInfos", incomeRowInfos);
+		model.addAttribute("costRowInfos", costRowInfos);
 		model.addAttribute("sumInfo", sumJO);
 
 		return "forward:/getDepartmentReport.jsp";
@@ -497,28 +460,28 @@ public class ReportController {
 		}
 
 		Clinic clinic = cService.getById(clinicId);
-		//获取门诊开过的收入费用项目、支出费用项目、治疗项目
+		// 获取门诊开过的收入费用项目、支出费用项目、治疗项目
 		List<Project> incomePjList = bService.getClinicIncomeFundProject(clinic, startTimeLong,
 				endTimeLong);
 		List<Project> costPjList = bService.getClinicCostFundProject(clinic, startTimeLong,
 				endTimeLong);
 		List<Project> treatmentPjList = bService.getClinicTreatmentProject(clinic, startTimeLong,
 				endTimeLong);
-		
-		//获取门诊开过的收入费用项目、支出费用项目、治疗项目的汇总信息
-		JSONArray incomeRowsInfo = bService.getClinicProjectReportMsg(incomePjList, startTimeLong,
+
+		// 获取门诊开过的收入费用项目、支出费用项目、治疗项目的汇总信息
+		JSONArray incomeRowInfos = bService.getClinicProjectReportMsg(incomePjList, startTimeLong,
 				endTimeLong, Constant.FUND_BILL.getName(), clinic.getClinicId());
-		JSONArray costRowsInfo = bService.getClinicProjectReportMsg(costPjList, startTimeLong,
+		JSONArray costRowInfos = bService.getClinicProjectReportMsg(costPjList, startTimeLong,
 				endTimeLong, Constant.FUND_BILL.getName(), clinic.getClinicId());
 		JSONArray treatmentRowsInfo = bService.getClinicProjectReportMsg(treatmentPjList,
 				startTimeLong, endTimeLong, Constant.DOCTOR_BILL.getName(), clinic.getClinicId());
 
-		JSONObject sumJO = bService.getSumPrice(incomeRowsInfo, costRowsInfo, treatmentRowsInfo);
+		JSONObject sumJO = bService.getSumPrice(incomeRowInfos, costRowInfos, treatmentRowsInfo);
 
-		incomeRowsInfo.add(getTreatmentSumJO(treatmentRowsInfo));
+		incomeRowInfos.add(getTreatmentSumJO(treatmentRowsInfo));
 
-		model.addAttribute("incomeRowsInfo", incomeRowsInfo);
-		model.addAttribute("costRowsInfo", costRowsInfo);
+		model.addAttribute("incomeRowInfos", incomeRowInfos);
+		model.addAttribute("costRowInfos", costRowInfos);
 		model.addAttribute("sumInfo", sumJO);
 
 		return "forward:/getClinicReport.jsp";
@@ -531,9 +494,8 @@ public class ReportController {
 	 * @param session
 	 * @return
 	 */
-	@ResponseBody
 	@RequestMapping(value = "/getWorkerReport", produces = "text/json;charset=utf-8")
-	public String getWorkerReport(WebRequest req, HttpSession session) {
+	public String getWorkerReport(WebRequest req, HttpSession session, ModelMap model) {
 		// 参数
 		// {
 		// rank : xxx, (1:科室级报表；2:门诊级报表;3:企业级报表)
@@ -598,26 +560,12 @@ public class ReportController {
 			JSONObject resultJO = ctiService.getDepartmentSumPrice(department, startTimeLong,
 					endTimeLong);
 
-			resultJO.put("rowInfos", workInfoList);
+			// [{"employeeId":1,"employeeName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
+			model.addAttribute("rowInfos", workInfoList);
+			// {"departmentId:1,"departmentName:科室一,"sumNumber":3,"sumPrice":60}
+			model.addAttribute("sumInfo", resultJO);
 
-			System.out.println("ReportController.getWorkerReport.resultJO1 : "
-					+ resultJO.toJSONString());
-			return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-
-			// 返回参数例子：
-			// {
-			// "code":200,
-			// "msg":"获取成功",
-			// "result":{}
-			// }
-			// result:
-			// {
-			// "departmentId:1,
-			// "departmentName:科室一,
-			// "sumNumber":3,
-			// "sumPrice":60,
-			// "rowInfos":[{"employeeId":1,"employeeName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
-			// }
+			return "forward:/getWorkerReport.jsp";
 
 		}
 
@@ -644,25 +592,13 @@ public class ReportController {
 			}
 
 			JSONObject resultJO = ctiService.getClinicSumPrice(clinic, startTimeLong, endTimeLong);
-			resultJO.put("rowInfos", rowInfosJA);
 
-			System.out.println("ReportController.getWorkerReport.resultJO2 : "
-					+ resultJO.toJSONString());
-			return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-			// 返回参数例子：
-			// {
-			// "code":200,
-			// "msg":"获取成功",
-			// "result":{}
-			// }
-			// result:
-			// {
-			// "clinicId:1,
-			// "clinicName:门诊一,
-			// "sumNumber":3,
-			// "sumPrice":60,
-			// rowInfosos":[{"departmentId":1,"departmentName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
-			// }
+			// [{"employeeId":1,"employeeName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
+			model.addAttribute("rowInfos", rowInfosJA);
+			// {"clinicId:1, "clinicName:科室一,"sumNumber":3,"sumPrice":60}
+			model.addAttribute("sumInfo", resultJO);
+
+			return "forward:/getWorkerReport2.jsp";
 
 		}
 
@@ -677,23 +613,13 @@ public class ReportController {
 			rowInfosJA.add(rowInfosJO);
 		}
 		JSONObject resultJO = ctiService.getSumPrice(startTimeLong, endTimeLong);
-		resultJO.put("rowInfos", rowInfosJA);
 
-		System.out.println("ReportController.getWorkerReport.resultJO2 : "
-				+ resultJO.toJSONString());
-		return StringUtil.setResult(200, "获取成功", resultJO.toJSONString());
-		// 返回参数例子：
-		// {
-		// "code":200,
-		// "msg":"获取成功",
-		// "result":{}
-		// }
-		// result:
-		// {
-		// "sumNumber":3,
-		// "sumPrice":60,
-		// "rowInfos":[{"clinicId":1,"clinicName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
-		// }
+		// [{"employeeId":1,"employeeName":"pismery","sumNumber":2,"sumPrice":35},{...},...]
+		model.addAttribute("rowInfos", rowInfosJA);
+		// {"sumNumber":3,"sumPrice":60}
+		model.addAttribute("sumInfo", resultJO);
+
+		return "forward:/getWorkerReport3.jsp";
 	}
 
 	/**
