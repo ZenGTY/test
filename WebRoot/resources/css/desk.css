@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+	.desk navigation{
+		width:950px;
+		height:240px;
+		bakcground:#fff;
+		border:1px solid #ccc;
+	}
+	
+	.desk serve{
+		width:950px;
+		height:140px;
+		bakcground:#fff;
+		border:1px solid #ccc;
+	}
+	
+	.desk recommend{
+		width:950px;
+		height:140px;
+		bakcground:#fff;
+		border:1px solid #ccc;
+	}
