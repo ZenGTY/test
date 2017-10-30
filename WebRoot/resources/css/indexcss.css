@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+	
+	
+	.titleSpan1{
+		color:#fff;
+		font-size:50px;
+		font-style: italic;
+		font-weight:bold;
+	}
+	.titleSpan2{
+		color:#fff;
+		font-size:20px;
+		font-style: italic;
+		margin-top:10px;
+	}
+	
+	
+	
+	.clickClass1{
+		height:60px;
+	}
+	.clickClass11{
+		height:40px;
+	}
+	.clickClass2{
+		width:60px;
+		height:60px;
+	}
+	.clickClass2{
+		width:40px;
+		height:40px;
+	}
+	.clickClass3{
+		font-size:20px;
+		height:60px;
+		line-height:60px;
+	}
+	.clickClass33{
+		font-size:16px;
+		height:40px;
+		line-height:40px;
+	}
