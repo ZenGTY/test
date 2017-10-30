@@ -55,7 +55,10 @@ public class BillController {
 	private ClinicService clinicService;
 	@Autowired
 	private DepartmentService depService;
-
+	
+	
+	
+	
 	@ResponseBody
 	@RequestMapping(value = "/get", produces = "text/json;charset=utf-8")
 	public String get(WebRequest req) {
@@ -196,9 +199,6 @@ public class BillController {
 		}
 
 		// 获取数据
-		System.out.println("3:" + req.getParameter("projects"));
-		System.out.println("1:" + req.getParameter("clientId"));
-		System.out.println("2:" + Long.parseLong(req.getParameter("clientId"), 10));
 		Client client = cService.getById(Long.parseLong(req.getParameter("clientId"), 10));
 		JSONArray projects = JSONArray.parseArray(req.getParameter("projects"));
 

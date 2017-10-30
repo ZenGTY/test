@@ -1,5 +1,7 @@
 package org.hospital.service.impl;
 
+import java.util.List;
+
 import org.hospital.domain.Project;
 import org.hospital.domain.ProjectDAO;
 import org.hospital.service.ProjectService;
@@ -21,4 +23,14 @@ public class ProjectServiceImpl implements ProjectService {
     public Project getById(Long id) {
         return pDao.findById(id);
     }
+
+	@Override
+	public List<Project> getAll() {
+		return pDao.findAll();
+	}
+
+	@Override
+	public List<Project> getTreatmentProject() {
+		return pDao.findByProperty("category", "treatmentProject");
+	}
 }

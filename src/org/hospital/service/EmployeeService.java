@@ -19,6 +19,9 @@ public interface EmployeeService {
 	 */
     Employee login(String account,String pwd);
     
+    
+    Employee getById(Long employeeId);
+    
     /**
      * 获取部门下的所有员工
      * @param departmentId

@@ -50,6 +50,21 @@ public class BillProjectDAO {
 		// do nothing
 	}
 
+	public List getByBillId(Long billId) {
+		log.debug("getByBillId BillProject instance");
+		try {
+			String hql = "SELECT DISTINCT bp.id.projectId FROM BillProject as bp WHERE bp.id.billId = :billId";
+			Query q = getCurrentSession().createQuery(hql);
+			q.setParameter("billId", billId);
+			List result = q.list();
+			log.debug("getByBillId successful");
+			return result;
+		} catch (RuntimeException re) {
+			log.error("save failed", re);
+			throw re;
+		}
+	}
+
 	public void save(BillProject transientInstance) {
 		log.debug("saving BillProject instance");
 		try {

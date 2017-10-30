@@ -16,7 +16,7 @@
 	<mvc:resources mapping="/img/**" location="/resources/img/" />
 	<mvc:resources mapping="/lib/**" location="/lib/" />
 	<mvc:resources mapping="/views/**" location="/views/" />
-
+	<mvc:resources mapping="/error404.html" location="/error404.html" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"

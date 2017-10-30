@@ -38,9 +38,13 @@ public enum Constant {
      * bill表 category字段 医生开单(doctorBill),费用清单(fundBill)
      */
     DOCTOR_BILL("doctorBill"),
-    FUND_BILL("fundBill");
-
-
+    FUND_BILL("fundBill"),
+    
+    /**
+     * project表category字段 治疗项目(treatmentProject),费用项目(fundProject)
+     */
+    TREATMENT_PROJECT("treatmentProject"),
+    FUND_PROJECT("fundProject");
 
 
 

@@ -1,5 +1,7 @@
 package org.hospital.service;
 
+import java.util.List;
+
 import org.hospital.domain.Project;
 
 
@@ -9,4 +11,8 @@ import org.hospital.domain.Project;
 public interface ProjectService {
 
     Project getById(Long id);
+    
+    List<Project> getAll();
+    
+    List<Project> getTreatmentProject();
 }

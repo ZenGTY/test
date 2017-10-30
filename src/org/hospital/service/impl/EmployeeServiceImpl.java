@@ -111,4 +111,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 		return result;
 	}
+
+	@Override
+	public Employee getById(Long employeeId) {
+		return eDao.findById(employeeId);
+	}
 }
