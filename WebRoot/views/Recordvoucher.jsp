@@ -471,7 +471,7 @@
 				  },btn2: function(index, layero){
 					    
 				  },
-				  content: '${pageContext.request.contextPath}/view/ProjectAdd.jsp' //iframe的url
+				  content: '${pageContext.request.contextPath}/views/ProjectAdd.jsp' //iframe的url
 				});
 		});
 		$('#table_example').on('click','.clientAdd',function(){   //新增项目名称
@@ -488,7 +488,7 @@
 				  },btn2: function(index, layero){
 					    
 				  },
-				  content: '${pageContext.request.contextPath}/view/ClientAdd.jsp' //iframe的url
+				  content: '${pageContext.request.contextPath}/views/ClientAdd.jsp' //iframe的url
 				});
 		});
 		//提交Recordvoucher表单验证，查看项目名称是否存在，查看门诊是否存在，查看科室是否存在，

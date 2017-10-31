@@ -54,7 +54,7 @@ public class ProjectDAO {
 	protected void initDao() {
 		// do nothing
 	}
-
+	
 	public void save(Project transientInstance) {
 		log.debug("saving Project instance");
 		try {

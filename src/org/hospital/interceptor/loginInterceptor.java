@@ -14,6 +14,7 @@ public class loginInterceptor extends HandlerInterceptorAdapter {
 		Employee employee = (Employee) req.getSession().getAttribute("employee");
 		if (employee == null) {
 			req.getRequestDispatcher("/login.html").forward(req, res);
+			//res.sendRedirect("/login.html");
 			return false;
 		}
 		return true;

@@ -298,7 +298,7 @@ body{
 					}
 					if(left3>0){
 					}else{
-						$('.middleFrame').append("<div class="+"iframes"+" id="+left1+"><Iframe src="+"${pageContext.request.contextPath }/view/"+left2+""+" width="+"100%"+" height="+"100%"+" scrolling="+"yes"+" frameborder="+"0"+"></iframe></div>");	
+						$('.middleFrame').append("<div class="+"iframes"+" id="+left1+"><Iframe src="+"${pageContext.request.contextPath }/views/"+left2+""+" width="+"100%"+" height="+"100%"+" scrolling="+"yes"+" frameborder="+"0"+"></iframe></div>");	
 						$('.tab ul').append("<li><div class="+"tabName"+">"+left1+"<input type="+"hidden"+" value="+left2+"></div><div class="+"deleteTabimg"+"><img src="+"${pageContext.request.contextPath}/resources/img/deleteTab.png"+"></div></li>");
 						tabNames.push(left1);
 					}

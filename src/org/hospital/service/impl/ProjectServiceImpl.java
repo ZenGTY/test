@@ -33,4 +33,9 @@ public class ProjectServiceImpl implements ProjectService {
 	public List<Project> getTreatmentProject() {
 		return pDao.findByProperty("category", "treatmentProject");
 	}
+
+	@Override
+	public List<Project> getFundProject() {
+		return pDao.findByProperty("category", "fundProject");
+	}
 }

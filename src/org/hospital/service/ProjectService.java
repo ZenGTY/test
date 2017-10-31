@@ -15,4 +15,6 @@ public interface ProjectService {
     List<Project> getAll();
     
     List<Project> getTreatmentProject();
+    
+    List<Project> getFundProject();
 }

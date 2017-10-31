@@ -84,29 +84,29 @@
 	<br />
 	<br />
 	
-	<label>get： </label>
-	<button class="btn" onclick="get()">getClinicReport</button>
+	<label>获取所有费用项目： </label>
+	<button class="btn" onclick="getAllFundProject()">getAllFundProject</button>
 	<br />
 	<br />
 
 </body>
 <script type="text/javascript" src="./lib/jquery-1.10.2/jquery.min.js"></script>
 <script>
-	function get() {
+	function getAllFundProject() {
 		var paramInfo = {
-				
 			};
 		$.ajax({
 			data : paramInfo,
-			url : "./billController/get",
+			url : "./projectController/getAllFundProject",
 			type : "GET",
 			success : function(response) {
 				console.log(response);
-				$("#div_1").html(response);
+				console.log(JSON.parse(response.result));
 			},
 			statusCode:{
 				405 : function(){
-					window.location.href = "/Hospital/login.html";
+					console.log("405");
+					//window.location.href = "/Hospital/login.html";
 				}
 			}
 		});
